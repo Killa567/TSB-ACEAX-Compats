@@ -1008,6 +1008,82 @@ class XtdGearModels
                 };
             };
         };
+//SEAL_UDT
+        class SEAL_UDT
+        {
+        	label = "SEAL UDT";
+        	author = "SGTdanny";
+        	options[] = {"Camo","Shorts","Sleeves"};
+        	class Camo
+        	{
+        		values[] = 
+        		{
+        			"Option1",
+        			"Option2",
+        			"Option3"
+        		};
+        		alwaysSelectable = 1;
+        		class Option1
+        		{
+        			label = "Blue";
+        			image = "SOG_ACEAX_Compat\data\SEALblue.paa";
+        		};
+        		class Option2
+        		{
+        			label = "Yellow";
+        			image = "SOG_ACEAX_Compat\data\SEALyellow.paa";
+        		};
+        		class Option3
+        		{
+        			label = "Beaver Wetsuit";
+        			image = "SOG_ACEAX_Compat\data\SEALbeaver.paa";
+        		};
+        	};
+        	class Shorts
+        	{
+        		values[] = 
+        		{
+        			"Khaki",
+        			"Tiger"
+        		};
+        		alwaysSelectable = 1;
+        		class Khaki
+        		{
+        			label = "Khaki";
+        			image = "SOG_ACEAX_Compat\data\Khaki.paa";
+        		};
+        		class Tiger
+        		{
+        			label = "Tiger";
+        			image = "SOG_ACEAX_Compat\data\Tiger.paa";
+        		};
+        	};
+        	class Sleeves
+            {
+                values[] = 
+                {
+                    "Full",
+                    "Rolled_High",
+                    "Rolled_Low"
+                };
+                class Full {
+                    label = "Full"
+                    changeingame = 1;
+                };
+                class Rolled_High {
+                    label = "Rolled High"
+                    actionLabel="Roll sleeves High";
+                    icon="\z\aceax\addons\gearinfo\data\ui\sleeves_quarter.paa";
+                    changeingame = 1;
+                };
+                class Rolled_Low {
+                    label = "Rolled Low"
+                    actionLabel="Roll sleeves Low";
+                    icon="\z\aceax\addons\gearinfo\data\ui\sleeves_half.paa";
+                    changeingame = 1;
+                };
+            };
+        };
     };
 };
 class XtdGearInfos
@@ -2078,6 +2154,70 @@ class XtdGearInfos
         	Uniforms = "Option2";
         	Camo = "TigerGreen";
         	Sleeves = "Rolled_High";
+        };
+//SEAL_UDT
+        class vn_b_uniform_seal_07_01
+        {
+        	model = "SEAL_UDT";
+        	Camo = "Option1";
+        	Shorts = "Khaki";
+        	Sleeves = "Rolled_Low";
+        };
+        class vn_b_uniform_seal_07_02
+        {
+        	model = "SEAL_UDT";
+        	Camo = "Option1";
+        	Shorts = "Tiger";
+        	Sleeves = "Rolled_Low";
+        };
+        class vn_b_uniform_seal_07_03
+        {
+        	model = "SEAL_UDT";
+        	Camo = "Option2";
+        	Shorts = "Khaki";
+        	Sleeves = "Rolled_Low";
+        };
+        class vn_b_uniform_seal_07_04
+        {
+        	model = "SEAL_UDT";
+        	Camo = "Option2";
+        	Shorts = "Tiger";
+        	Sleeves = "Rolled_Low";
+        };
+        class vn_b_uniform_seal_08_01
+        {
+        	model = "SEAL_UDT";
+        	Camo = "Option1";
+        	Shorts = "Khaki";
+        	Sleeves = "Rolled_High";
+        };
+        class vn_b_uniform_seal_08_02
+        {
+        	model = "SEAL_UDT";
+        	Camo = "Option1";
+        	Shorts = "Tiger";
+        	Sleeves = "Rolled_High"
+        };
+        class vn_b_uniform_seal_08_03
+        {
+        	model = "SEAL_UDT";
+        	Camo = "Option2";
+        	Shorts = "Khaki";
+        	Sleeves = "Rolled_High";
+        };
+        class vn_b_uniform_seal_08_04
+        {
+        	model = "SEAL_UDT";
+        	Camo = "Option2";
+        	Shorts = "Tiger";
+        	Sleeves = "Rolled_High"
+        };
+        class vn_b_uniform_seal_09_01
+        {
+        	model = "SEAL_UDT";
+        	Camo = "Option3";
+        	Shorts = "Khaki";
+        	Sleeves = "Full";
         };
     };
 };
