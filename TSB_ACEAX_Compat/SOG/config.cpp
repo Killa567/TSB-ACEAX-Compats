@@ -853,9 +853,7 @@ class XtdGearModels
         		values[] = 
         		{
         			"Option1",
-        			"Option2",
-        			"Option3",
-        			"Option4"
+        			"Option2"
         		};
         		class Option1 
         		{
@@ -864,14 +862,6 @@ class XtdGearModels
         		class Option2 
         		{
         			label = "Uniform 2";
-        		};
-        		class Option3 
-        		{
-        			label = "Uniform 3";
-        		};
-        		class Option4 
-        		{
-        			label = "Uniform 4";
         		};
         	};
         	class Tone
@@ -928,6 +918,7 @@ class XtdGearModels
                 };
         	};
         };
+        
     };
 };
 class XtdGearInfos
@@ -1716,22 +1707,6 @@ class XtdGearInfos
         	sleeves = "Rolled_High";
         };
 //PL_BDU
-        class vn_o_uniform_pl_army_01_11 // 1 Dark
-        {
-        	model = "PL_BDU";
-        	Option = "Option1";
-        	Tone = "dark";
-        	Field = "Normal";
-        	Sleeves = "Full";
-        };
-        class vn_o_uniform_pl_army_01_12 // 1 Dark Field
-        {
-        	model = "PL_BDU";
-        	Option = "Option1";
-        	Tone = "dark";
-        	Field = "Field";
-        	Sleeves = "Full";
-        };
         class vn_o_uniform_pl_army_01_13 // 1 Light
         {
         	model = "PL_BDU";
@@ -1748,6 +1723,38 @@ class XtdGearInfos
         	Field = "Field";
         	Sleeves = "Full";
         };
+        class vn_o_uniform_pl_army_01_11 // 1 Dark
+        {
+        	model = "PL_BDU";
+        	Option = "Option1";
+        	Tone = "dark";
+        	Field = "Normal";
+        	Sleeves = "Full";
+        };
+        class vn_o_uniform_pl_army_01_12 // 1 Dark Field
+        {
+        	model = "PL_BDU";
+        	Option = "Option1";
+        	Tone = "dark";
+        	Field = "Field";
+        	Sleeves = "Full";
+        };
+        class vn_o_uniform_pl_army_02_13 // 2 Light
+        {
+        	model = "PL_BDU";
+        	Option = "Option1";
+        	Tone = "light";
+        	Field = "Normal";
+        	Sleeves = "Rolled_High";
+        };
+        class vn_o_uniform_pl_army_02_14 // 2 Light Field
+        {
+        	model = "PL_BDU";
+        	Option = "Option1";
+        	Tone = "light";
+        	Field = "Field";
+        	Sleeves = "Rolled_High";
+        };
         class vn_o_uniform_pl_army_02_11 // 2 Dark
         {
         	model = "PL_BDU";
@@ -1760,6 +1767,70 @@ class XtdGearInfos
         {
         	model = "PL_BDU";
         	Option = "Option1";
+        	Tone = "dark";
+        	Field = "Field";
+        	Sleeves = "Rolled_High";
+        };
+        class vn_o_uniform_pl_army_03_13 // 3 Light
+        {
+        	model = "PL_BDU";
+        	Option = "Option2";
+        	Tone = "light";
+        	Field = "Normal";
+        	Sleeves = "Full";
+        };
+        class vn_o_uniform_pl_army_03_14 // 3 Light Field
+        {
+        	model = "PL_BDU";
+        	Option = "Option2";
+        	Tone = "light";
+        	Field = "Field";
+        	Sleeves = "Full";
+        };
+        class vn_o_uniform_pl_army_03_11 // 3 Dark
+        {
+        	model = "PL_BDU";
+        	Option  = "Option2";
+        	Tone = "dark";
+        	Field = "Normal";
+        	Sleeves = "Full";
+        };
+        class vn_o_uniform_pl_army_03_12 // 3 Dark Field
+        {
+        	model = "PL_BDU";
+        	Option = "Option2";
+        	Tone = "dark";
+        	Field = "Field";
+        	Sleeves = "Full";
+        };
+        class vn_o_uniform_pl_army_04_13 // 4 Light
+        {
+        	model = "PL_BDU";
+        	Option = "Option2";
+        	Tone = "light";
+        	Field = "Normal";
+        	Sleeves = "Rolled_High";
+        };
+        class vn_o_uniform_pl_army_04_14 // 4 Light Field
+        {
+        	model = "PL_BDU";
+        	Option = "Option2";
+        	Tone = "light";
+        	Field = "Field";
+        	Sleeves = "Rolled_High";
+        };
+        class vn_o_uniform_pl_army_04_11 // 4 Dark
+        {
+        	model = "PL_BDU";
+        	Option = "Option2";
+        	Tone = "dark";
+        	Field = "Normal";
+        	Sleeves = "Rolled_High";
+        };
+        class vn_o_uniform_pl_army_04_12 // 4 Dark Field
+        {
+        	model = "PL_BDU";
+        	Option = "Option2";
         	Tone = "dark";
         	Field = "Field";
         	Sleeves = "Rolled_High";
