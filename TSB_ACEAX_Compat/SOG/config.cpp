@@ -726,7 +726,7 @@ class XtdGearModels
         class NVA_Dac_Cong
         {
         	label = "Dac Cong Uniforms";
-        	auhtor = "SGTdanny";
+        	author = "SGTdanny";
         	options[] = {"Camo","Shirt"};
         	class camo
         	{
@@ -918,7 +918,96 @@ class XtdGearModels
                 };
         	};
         };
-        
+//SEAL_BDU
+        class SEAL_BDU
+        {
+        	label = "SEAL Uniforms";
+        	author = "SGTdanny";
+        	options[] = {"Uniforms","Camo","Sleeves"};
+        	class Uniforms
+        	{
+        		values[] = 
+        		{
+        			"Option1",
+        			"Option2",
+        			"Option3"
+        		};
+                alwaysSelectable = 1;
+        		class Option1
+        		{
+        			label = "SEAL 1";
+        		};
+        		class Option2
+        		{
+        			label = "SEAL 2";
+        		};
+        		class Option3
+        		{
+        			label = "T Shirt 1"
+        		};
+        	};
+        	class Camo
+        	{
+        		values[] = 
+        		{
+        			"ERDL",
+        			"Olive",
+        			"OliveDirty",
+        			"Tiger",
+        			"TigerGreen",
+        			"Blue"
+        		};
+				class ERDL {
+					label = "ERDL";
+					image = "SOG_ACEAX_Compat\data\ERDL.paa";
+				};
+				class Olive {
+					label = "Olive";
+					image = "SOG_ACEAX_Compat\data\Olive.paa";
+				};
+				class OliveDirty {
+					label = "Olive Dirty";
+					image = "SOG_ACEAX_Compat\data\OliveFld.paa";
+				};
+				class Tiger {
+					label = "Tiger";
+					image = "SOG_ACEAX_Compat\data\Tiger.paa";
+				};
+				class TigerGreen {
+					label = "Tiger Green";
+					image = "SOG_ACEAX_Compat\data\TigerGrn.paa";
+				};
+				class Blue {
+					label = "Blue";
+					image = "SOG_ACEAX_Compat\data\SEALblue.paa"
+				};
+        	};
+        	class Sleeves
+            {
+                values[] = 
+                {
+                    "Full",
+                    "Rolled_High",
+                    "Rolled_Low"
+                };
+                class Full {
+                    label = "Full"
+                    changeingame = 1;
+                };
+                class Rolled_High {
+                    label = "Rolled High"
+                    actionLabel="Roll sleeves High";
+                    icon="\z\aceax\addons\gearinfo\data\ui\sleeves_quarter.paa";
+                    changeingame = 1;
+                };
+                class Rolled_Low {
+                    label = "Rolled Low"
+                    actionLabel="Roll sleeves Low";
+                    icon="\z\aceax\addons\gearinfo\data\ui\sleeves_half.paa";
+                    changeingame = 1;
+                };
+            };
+        };
     };
 };
 class XtdGearInfos
@@ -1833,6 +1922,161 @@ class XtdGearInfos
         	Option = "Option2";
         	Tone = "dark";
         	Field = "Field";
+        	Sleeves = "Rolled_High";
+        };
+//SEAL_BDU
+        class vn_b_uniform_seal_01_06
+        {
+        	model = "SEAL_BDU";
+        	Uniforms = "Option1";
+        	Camo = "ERDL";
+        	Sleeves = "Full";
+        };
+        class vn_b_uniform_seal_01_07
+        {
+        	model = "SEAL_BDU";
+        	Uniforms = "Option1";
+        	Camo = "Olive";
+        	Sleeves = "Full";
+        };
+        class vn_b_uniform_seal_01_01
+        {
+        	model = "SEAL_BDU";
+        	Uniforms = "Option1";
+        	Camo = "OliveDirty";
+        	Sleeves = "Full";
+        };
+        class vn_b_uniform_seal_01_02
+        {
+        	model = "SEAL_BDU";
+        	Uniforms = "Option1";
+        	Camo = "Tiger";
+        	Sleeves = "Full";
+        };
+        class vn_b_uniform_seal_01_05
+        {
+        	model = "SEAL_BDU";
+        	Uniforms = "Option1";
+        	Camo = "TigerGreen";
+        	Sleeves = "Full";
+        };
+        class vn_b_uniform_seal_02_06
+        {
+        	model = "SEAL_BDU";
+        	Uniforms = "Option1";
+        	Camo = "ERDL";
+        	Sleeves = "Rolled_High";
+        };
+        class vn_b_uniform_seal_02_07
+        {
+        	model = "SEAL_BDU";
+        	Uniforms = "Option1";
+        	Camo = "Olive";
+        	Sleeves = "Rolled_High";
+        };
+        class vn_b_uniform_seal_02_01
+        {
+        	model = "SEAL_BDU";
+        	Uniforms = "Option1";
+        	Camo = "OliveDirty";
+        	Sleeves = "Rolled_High";
+        };
+        class vn_b_uniform_seal_02_02
+        {
+        	model = "SEAL_BDU";
+        	Uniforms = "Option1";
+        	Camo = "Tiger";
+        	Sleeves = "Rolled_High";
+        };
+        class vn_b_uniform_seal_02_05
+        {
+        	model = "SEAL_BDU";
+        	Uniforms = "Option1";
+        	Camo = "TigerGreen";
+        	Sleeves = "Rolled_High";
+        };
+        class vn_b_uniform_seal_03_01
+        {
+        	model = "SEAL_BDU";
+        	Uniforms = "Option3";
+        	Camo = "Blue";
+        	Sleeves = "Rolled_Low";
+        };
+        class vn_b_uniform_seal_04_01
+        {
+        	model = "SEAL_BDU";
+        	Uniforms = "Option3";
+        	Camo = "Blue";
+        	Sleeves = "Rolled_High";
+        };
+        class vn_b_uniform_seal_05_06
+        {
+        	model = "SEAL_BDU";
+        	Uniforms = "Option2";
+        	Camo = "ERDL";
+        	Sleeves = "Rolled_Low";
+        };
+        class vn_b_uniform_seal_05_07
+        {
+        	model = "SEAL_BDU";
+        	Uniforms = "Option2";
+        	Camo = "Olive";
+        	Sleeves = "Rolled_Low";
+        };
+        class vn_b_uniform_seal_05_01
+        {
+        	model = "SEAL_BDU";
+        	Uniforms = "Option2";
+        	Camo = "OliveDirty";
+        	Sleeves = "Rolled_Low";
+        };
+        class vn_b_uniform_seal_05_02
+        {
+        	model = "SEAL_BDU";
+        	Uniforms = "Option2";
+        	Camo = "Tiger";
+        	Sleeves = "Rolled_Low";
+        };
+        class vn_b_uniform_seal_05_05
+        {
+        	model = "SEAL_BDU";
+        	Uniforms = "Option2";
+        	Camo = "TigerGreen";
+        	Sleeves = "Rolled_Low";
+        };
+        class vn_b_uniform_seal_06_06
+        {
+        	model = "SEAL_BDU";
+        	Uniforms = "Option2";
+        	Camo = "ERDL";
+        	Sleeves = "Rolled_High";
+        };
+        class vn_b_uniform_seal_06_07
+        {
+        	model = "SEAL_BDU";
+        	Uniforms = "Option2";
+        	Camo = "Olive";
+        	Sleeves = "Rolled_High";
+        };
+        class vn_b_uniform_seal_06_01
+        {
+        	model = "SEAL_BDU";
+        	Uniforms = "Option2";
+        	Camo = "OliveDirty";
+        	Sleeves = "Rolled_High";
+        };
+        class vn_b_uniform_seal_06_02
+        {
+        	model = "SEAL_BDU";
+        	Uniforms = "Option2";
+        	Camo = "Tiger";
+        	Sleeves = "Rolled_High";
+        };
+        class vn_b_uniform_seal_06_05
+        {
+        	model = "SEAL_BDU";
+        	Uniforms = "Option2";
+        	Camo = "TigerGreen";
         	Sleeves = "Rolled_High";
         };
     };
