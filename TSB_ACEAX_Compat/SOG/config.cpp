@@ -670,17 +670,16 @@ class XtdGearModels
         {
         	label = "NVA 65 Uniforms";
         	author = "SGTdanny";
-        	options[] = {"Option","Dirty"};
-        	class option
+        	options[] = {"Option","Dirty","Sleeves"};
+        	class Option
         	{
         		values[] = {
         			"Option1",
         			"Option2",
         			"Option3",
-        			"Option4",
-        			"Option5",
-        			"Option6"
+        			"Option4"
         		};
+        		alwaysSelectable = 1;
         		class Option1 {
         			label = "Option 1";
         			image = "SOG_ACEAX_Compat\data\NVA65_1.paa";
@@ -697,16 +696,8 @@ class XtdGearModels
         			label = "Option 4";
         			image = "SOG_ACEAX_Compat\data\NVA65_1.paa";
         		};
-        		class Option5 {
-        			label = "Option 5";
-        			image = "SOG_ACEAX_Compat\data\NVA65_1.paa";
-        		};
-        		class Option6 {
-        			label = "Option 6";
-        			image = "SOG_ACEAX_Compat\data\NVA65_1.paa";
-        		};
         	};
-        	class dirty
+        	class Dirty
         	{
         		values[] = {
         			"Normal",
@@ -714,13 +705,29 @@ class XtdGearModels
         		};
         		class Normal {
         			label = "Normal";
-        			image = "SOG_ACEAX_Compat\data\NVA65_1.paa";
         		};
         		class Field {
         			label = "Field";
-        			image = "SOG_ACEAX_Compat\data\NVA65_2.paa";
         		};
         	};
+        	class Sleeves
+            {
+                values[] = 
+                {
+                    "Full",
+                    "Rolled_High"
+                };
+                class Full {
+                    label = "Full"
+                    changeingame = 1;
+                };
+                class Rolled_High {
+                    label = "Rolled High"
+                    actionLabel="Roll sleeves High";
+                    icon="\z\aceax\addons\gearinfo\data\ui\sleeves_quarter.paa";
+                    changeingame = 1;
+                };
+            };
         };
 //NVA_DAC_CONG
         class NVA_Dac_Cong
@@ -1046,7 +1053,6 @@ class XtdGearModels
         			"Khaki",
         			"Tiger"
         		};
-        		alwaysSelectable = 1;
         		class Khaki
         		{
         			label = "Khaki";
@@ -1080,6 +1086,195 @@ class XtdGearModels
                     label = "Rolled Low"
                     actionLabel="Roll sleeves Low";
                     icon="\z\aceax\addons\gearinfo\data\ui\sleeves_half.paa";
+                    changeingame = 1;
+                };
+            };
+        };
+//VC_UNI
+        class VC_UNI
+        {
+        	label = "VC Uniform";
+        	author = "SGTdanny";
+        	options[] = {"Option","Camo","Sleeves"};
+        	class Option
+        	{
+        		values[] = 
+        		{
+        			"Option1",
+        			"Option2",
+        			"Option3",
+        			"Option4",
+        			"Option5",
+        			"Option6",
+        			"Option7"
+        		};
+        		alwaysSelectable = 1;
+        		class Option1
+        		{
+        			label = "Uniform 1";
+        		};
+        		class Option2
+        		{
+        			label = "Uniform 2";
+        		};
+        		class Option3
+        		{
+        			label = "Uniform 3";
+        		};
+        		class Option4
+        		{
+        			label = "Uniform 4";
+        		};
+        		class Option5
+        		{
+        			label = "Uniform 5";
+        		};
+        		class Option6
+        		{
+        			label = "Uniform 6";
+        		};
+        		class Option7
+        		{
+        			label = "Uniform 7";
+        		};
+        	};
+        	class Camo
+        	{
+        		values[] = 
+        		{
+        			"Camo1",
+        			"Camo2",
+        			"Camo3",
+        			"Camo4",
+        			"Camo5",
+        			"Camo6",
+        			"Camo7",
+        			"Camo8",
+        			"Camo9",
+        			"Camo10",
+        			"Camo11"
+        		};
+        		class Camo1
+        		{
+        			label = "Black";
+        			image = "SOG_ACEAX_Compat\data\DacCongBlack.paa";
+        		};
+        		class Camo2
+        		{
+        			label = "Black/White";
+        			image = "SOG_ACEAX_Compat\data\DacCongBlack.paa";
+        		};
+        		class Camo3
+        		{
+        			label = "Blue";
+        			image = "SOG_ACEAX_Compat\data\DacCongBlue.paa";
+        		};
+        		class Camo4
+        		{
+        			label = "Blue/Grey";
+        			image = "SOG_ACEAX_Compat\data\DacCongBlue.paa";
+        		};
+        		class Camo5
+        		{
+        			label = "Blue/Tan";
+        			image = "SOG_ACEAX_Compat\data\DacCongBlue.paa";
+        		};
+        		class Camo6
+        		{
+        			label = "Blue/White";
+        			image = "SOG_ACEAX_Compat\data\DacCongBlue.paa";
+        		};
+        		class Camo7
+        		{
+        			label = "Grey";
+        			image = "SOG_ACEAX_Compat\data\NVAgrey.paa";
+        		};
+        		class Camo8
+        		{
+        			label = "Grey/Tan";
+        			image = "SOG_ACEAX_Compat\data\NVAgrey.paa";
+        		};
+        		class Camo9
+        		{
+        			label = "Tan/Black";
+        			image = "SOG_ACEAX_Compat\data\NVA65_1.paa";
+        		};
+        		class Camo10
+        		{
+        			label = "White";
+        			image = "SOG_ACEAX_Compat\data\NVAwhite.paa";
+        		};
+        		class Camo11
+        		{
+        			label = "White/Black";
+        			image = "SOG_ACEAX_Compat\data\NVAwhite.paa";
+        		};
+        	}
+        	class Sleeves
+            {
+                values[] = 
+                {
+                    "Full",
+                    "Rolled_High",
+                    "Rolled_Low"
+                };
+                class Full {
+                    label = "Full"
+                    changeingame = 1;
+                };
+                class Rolled_High {
+                    label = "Rolled High"
+                    actionLabel="Roll sleeves High";
+                    icon="\z\aceax\addons\gearinfo\data\ui\sleeves_quarter.paa";
+                    changeingame = 1;
+                };
+                class Rolled_Low {
+                    label = "Rolled Low"
+                    actionLabel="Roll sleeves Low";
+                    icon="\z\aceax\addons\gearinfo\data\ui\sleeves_half.paa";
+                    changeingame = 1;
+                };
+            };
+        };
+//VPN_Uniform
+        class VPN_Uniform
+        {
+        	label = "VPN Uniform";
+        	author = "SGTdanny";
+        	options[] = {"Option","Sleeves"};
+        	class Option
+        	{
+        		values[] = 
+        		{
+        			"Option1",
+        			"Option2"
+        		};
+        		class Option1
+        		{
+        			label = "Uniform 1"
+        			image = "SOG_ACEAX_Compat\data\VPNnavy.paa"
+        		};
+        		class Option2
+        		{
+        			label = "Uniform 2"
+        			image = "SOG_ACEAX_Compat\data\VPNnavy.paa"
+        		};
+        	};
+        	class Sleeves
+            {
+                values[] = 
+                {
+                    "Full",
+                    "Rolled_High"
+                };
+                class Full {
+                    label = "Full"
+                    changeingame = 1;
+                };
+                class Rolled_High {
+                    label = "Rolled High"
+                    actionLabel="Roll sleeves High";
+                    icon="\z\aceax\addons\gearinfo\data\ui\sleeves_quarter.paa";
                     changeingame = 1;
                 };
             };
@@ -1593,77 +1788,89 @@ class XtdGearInfos
             pants = "Black";
         };
 //NVA_65
-        class vn_o_uniform_nva_army_01_01
+        class vn_o_uniform_nva_army_01_01 //1
         {
         	model = "NVA_65";
-        	option = "Option1";
-        	dirty = "Normal";
+        	Option = "Option1";
+        	Dirty = "Normal";
+        	Sleeves = "Full";
         };
-        class vn_o_uniform_nva_army_01_02 //Dirty
+        class vn_o_uniform_nva_army_01_02 //Field
         {
         	model = "NVA_65";
-        	option = "Option1";
-        	dirty = "Field";
+        	Option = "Option1";
+        	Dirty = "Field";
+        	Sleeves = "Full";
         };
-        class vn_o_uniform_nva_army_12_01
+        class vn_o_uniform_nva_army_02_01 //2
         {
         	model = "NVA_65";
-        	option = "Option2";
-        	dirty = "Normal";
+        	Option = "Option1";
+        	Dirty = "Normal";
+        	Sleeves = "Rolled_High";
         };
-        class vn_o_uniform_nva_army_12_02 //Dirty
+        class vn_o_uniform_nva_army_02_02 //Field
         {
         	model = "NVA_65";
-        	option = "Option2";
-        	dirty = "Field";
+        	Option = "Option1";
+        	Dirty = "Field";
+        	Sleeves = "Rolled_High";
         };
-        class vn_o_uniform_nva_army_02_01
+        class vn_o_uniform_nva_army_03_01 //3
         {
         	model = "NVA_65";
-        	option = "Option3";
-        	dirty = "Normal";
+        	Option = "Option2";
+        	Dirty = "Normal";
+        	Sleeves = "Full";
         };
-        class vn_o_uniform_nva_army_02_02 //Dirty
+        class vn_o_uniform_nva_army_03_02 //Field
         {
         	model = "NVA_65";
-        	option = "Option3";
-        	dirty = "Field";
+        	Option = "Option2";
+        	Dirty = "Field";
+        	Sleeves = "Full";
         };
-        class vn_o_uniform_nva_army_03_01
+        class vn_o_uniform_nva_army_04_01 //4
         {
         	model = "NVA_65";
-        	option = "Option4";
-        	dirty = "Normal";
+        	Option = "Option2";
+        	Dirty = "Normal";
+        	Sleeves = "Rolled_High";
         };
-        class vn_o_uniform_nva_army_03_02 //Dirty
+        class vn_o_uniform_nva_army_04_02 //Field
         {
         	model = "NVA_65";
-        	option = "Option4";
-        	dirty = "Field";
+        	Option = "Option2";
+        	Dirty = "Field";
+        	Sleeves = "Rolled_High";
         };
-        class vn_o_uniform_nva_army_04_01
+        class vn_o_uniform_nva_army_09_01 //9
         {
         	model = "NVA_65";
-        	option = "Option5";
-        	dirty = "Normal";
+        	Option = "Option3";
+        	Dirty = "Normal";
+        	Sleeves = "Full";
         };
-        class vn_o_uniform_nva_army_04_02 //Dirty
+        class vn_o_uniform_nva_army_09_02 //Field
         {
         	model = "NVA_65";
-        	option = "Option5";
-        	dirty = "Field";
+        	Option = "Option3";
+        	Dirty = "Field";
+        	Sleeves = "Full";
         };
-        class vn_o_uniform_nva_army_09_01
+        class vn_o_uniform_nva_army_12_01 //12
         {
         	model = "NVA_65";
-        	option = "Option6";
-        	dirty = "Normal";
+        	Option = "Option4";
+        	Dirty = "Normal";
+        	Sleeves = "Rolled_High";
         };
-        class vn_o_uniform_nva_army_09_02 //Dirty
+        class vn_o_uniform_nva_army_12_02 //Field
         {
         	model = "NVA_65";
-        	option = "Option6";
-        	dirty = "Field";
+        	Option = "Option4";
+        	Dirty = "Field";
+        	Sleeves = "Rolled_High";
         };
 //NVA_Dac_Cong
         class vn_o_uniform_nva_dc_13_07
@@ -2218,6 +2425,367 @@ class XtdGearInfos
         	Camo = "Option3";
         	Shorts = "Khaki";
         	Sleeves = "Full";
+        };
+//VC_UNI
+        //Uniform1
+        class vn_o_uniform_vc_mf_01_07
+        {
+        	model = "VC_UNI";
+        	Option = "Option1";
+        	Camo = "Camo1"; //Black
+        	Sleeves = "Full";
+        };
+        //Uniform1Camo
+        class vn_o_uniform_vc_01_01
+        {
+        	model = "VC_UNI";
+        	Option = "Option2";
+        	Camo = "Camo1"; //Black
+        	Sleeves = "Full";
+        };
+        class vn_o_uniform_vc_01_02
+        {
+        	model = "VC_UNI";
+        	Option = "Option2";
+        	Camo = "Camo2"; //BlackWhite
+        	Sleeves = "Full";
+        };
+        class vn_o_uniform_vc_01_04
+        {
+        	model = "VC_UNI";
+        	Option = "Option2";
+        	Camo = "Camo3"; //Blue
+        	Sleeves = "Full";
+        };
+        class vn_o_uniform_vc_01_07
+        {
+        	model = "VC_UNI";
+        	Option = "Option2";
+        	Camo = "Camo4"; //BlueGrey
+        	Sleeves = "Full";
+        };
+        class vn_o_uniform_vc_01_06
+        {
+        	model = "VC_UNI";
+        	Option = "Option2";
+        	Camo = "Camo6"; //BlueWhite
+        	Sleeves = "Full";
+        };
+        class vn_o_uniform_vc_01_03
+        {
+        	model = "VC_UNI";
+        	Option = "Option2";
+        	Camo = "Camo8"; //GreyTan
+        	Sleeves = "Full";
+        };
+        class vn_o_uniform_vc_01_05
+        {
+        	model = "VC_UNI";
+        	Option = "Option2";
+        	Camo = "Camo11"; //WhiteBlack
+        	Sleeves = "Full";
+        };
+        //Uniform2
+        class vn_o_uniform_vc_mf_02_07
+        {
+        	model = "VC_UNI";
+        	Option = "Option1";
+        	Camo = "Camo1"; //Black
+        	Sleeves = "Rolled_High";
+        };
+        //Uniform2Camo
+        class vn_o_uniform_vc_02_01
+        {
+        	model = "VC_UNI";
+        	Option = "Option2";
+        	Camo = "Camo1"; //Black
+        	Sleeves = "Rolled_High";
+        };
+        class vn_o_uniform_vc_02_02
+        {
+        	model = "VC_UNI";
+        	Option = "Option2";
+        	Camo = "Camo2"; //BlackWhite
+        	Sleeves = "Rolled_High";
+        };
+        class vn_o_uniform_vc_02_04
+        {
+        	model = "VC_UNI";
+        	Option = "Option2";
+        	Camo = "Camo3"; //Blue
+        	Sleeves = "Rolled_High";
+        };
+        class vn_o_uniform_vc_02_07
+        {
+        	model = "VC_UNI";
+        	Option = "Option2";
+        	Camo = "Camo4"; //BlueGrey
+        	Sleeves = "Rolled_High";
+        };
+        class vn_o_uniform_vc_02_06
+        {
+        	model = "VC_UNI";
+        	Option = "Option2";
+        	Camo = "Camo6"; //BlueWhite
+        	Sleeves = "Rolled_High";
+        };
+        class vn_o_uniform_vc_02_03
+        {
+        	model = "VC_UNI";
+        	Option = "Option2";
+        	Camo = "Camo8"; //GreyTan
+        	Sleeves = "Rolled_High";
+        };
+        class vn_o_uniform_vc_02_05
+        {
+        	model = "VC_UNI";
+        	Option = "Option2";
+        	Camo = "Camo11"; //WhiteBlack
+        	Sleeves = "Rolled_High";
+        };
+        //Uniform3
+        class vn_o_uniform_vc_mf_03_07
+        {
+        	model = "VC_UNI";
+        	Option = "Option3";
+        	Camo = "Camo1"; //Black
+        	Sleeves = "Full";
+        };
+        //Uniform3Camo
+        class vn_o_uniform_vc_03_01
+        {
+        	model = "VC_UNI";
+        	Option = "Option4";
+        	Camo = "Camo1"; //Black
+        	Sleeves = "Full";
+        };
+        class vn_o_uniform_vc_03_02
+        {
+        	model = "VC_UNI";
+        	Option = "Option4";
+        	Camo = "Camo2"; //BlackWhite
+        	Sleeves = "Full";
+        };
+        class vn_o_uniform_vc_03_04
+        {
+        	model = "VC_UNI";
+        	Option = "Option4";
+        	Camo = "Camo3"; //Blue
+        	Sleeves = "Full";
+        };
+        class vn_o_uniform_vc_03_07
+        {
+        	model = "VC_UNI";
+        	Option = "Option4";
+        	Camo = "Camo4"; //BlueGrey
+        	Sleeves = "Full";
+        };
+        class vn_o_uniform_vc_03_06
+        {
+        	model = "VC_UNI";
+        	Option = "Option4";
+        	Camo = "Camo6"; //BlueWhite
+        	Sleeves = "Full";
+        };
+        class vn_o_uniform_vc_03_03
+        {
+        	model = "VC_UNI";
+        	Option = "Option4";
+        	Camo = "Camo8"; //GreyTan
+        	Sleeves = "Full";
+        };
+        class vn_o_uniform_vc_03_05
+        {
+        	model = "VC_UNI";
+        	Option = "Option4";
+        	Camo = "Camo11"; //WhiteBlack
+        	Sleeves = "Full";
+        };
+        //Uniform4
+        class vn_o_uniform_vc_mf_04_07
+        {
+        	model = "VC_UNI";
+        	Option = "Option3";
+        	Camo = "Camo1"; //Black
+        	Sleeves = "Rolled_High";
+        };
+        //Uniform4Camo
+        class vn_o_uniform_vc_04_01
+        {
+        	model = "VC_UNI";
+        	Option = "Option4";
+        	Camo = "Camo1"; //Black
+        	Sleeves = "Rolled_High";
+        };
+        class vn_o_uniform_vc_04_02
+        {
+        	model = "VC_UNI";
+        	Option = "Option4";
+        	Camo = "Camo2"; //BlackWhite
+        	Sleeves = "Rolled_High";
+        };
+        class vn_o_uniform_vc_04_04
+        {
+        	model = "VC_UNI";
+        	Option = "Option4";
+        	Camo = "Camo3"; //Blue
+        	Sleeves = "Rolled_High";
+        };
+        class vn_o_uniform_vc_04_07
+        {
+        	model = "VC_UNI";
+        	Option = "Option4";
+        	Camo = "Camo4"; //BlueGrey
+        	Sleeves = "Rolled_High";
+        };
+        class vn_o_uniform_vc_04_06
+        {
+        	model = "VC_UNI";
+        	Option = "Option4";
+        	Camo = "Camo6"; //BlueWhite
+        	Sleeves = "Rolled_High";
+        };
+        class vn_o_uniform_vc_04_03
+        {
+        	model = "VC_UNI";
+        	Option = "Option4";
+        	Camo = "Camo8"; //GreyTan
+        	Sleeves = "Rolled_High";
+        };
+        class vn_o_uniform_vc_04_05
+        {
+        	model = "VC_UNI";
+        	Option = "Option4";
+        	Camo = "Camo11"; //WhiteBlack
+        	Sleeves = "Rolled_High";
+        };
+        //Uniform9
+        class vn_o_uniform_vc_mf_09_07 
+        {
+        	model = "VC_UNI";
+        	Option = "Option5";
+        	Camo = "Camo1";
+        	Sleeves = "Full";
+        };
+        //Uniform10
+        class vn_o_uniform_vc_mf_10_07
+        {
+        	model = "VC_UNI";
+        	Option = "Option5";
+        	Camo = "Camo1";
+        	Sleeves = "Rolled_High";
+        };
+        //Uniform11Camo
+        class vn_o_uniform_vc_mf_11_07
+        {
+        	model = "VC_UNI";
+        	Option = "Option6";
+        	Camo = "Camo1";
+        	Sleeves = "Full";
+        };
+        class vn_o_uniform_vc_reg_11_08
+        {
+        	model = "VC_UNI";
+        	Option = "Option6";
+        	Camo = "Camo3";
+        	Sleeves = "Full";
+        };
+        class vn_o_uniform_vc_reg_11_09
+        {
+        	model = "VC_UNI";
+        	Option = "Option6";
+        	Camo = "Camo5";
+        	Sleeves = "Full";
+        };
+        class vn_o_uniform_vc_reg_11_10
+        {
+        	model = "VC_UNI";
+        	Option = "Option6";
+        	Camo = "Camo9";
+        	Sleeves = "Full";
+        };
+        //Uniform12Camo
+        class vn_o_uniform_vc_mf_12_07
+        {
+        	model = "VC_UNI";
+        	Option = "Option6";
+        	Camo = "Camo1";
+        	Sleeves = "Rolled_High";
+        };
+        class vn_o_uniform_vc_reg_12_08
+        {
+        	model = "VC_UNI";
+        	Option = "Option6";
+        	Camo = "Camo3";
+        	Sleeves = "Rolled_High";
+        };
+        class vn_o_uniform_vc_reg_12_09
+        {
+        	model = "VC_UNI";
+        	Option = "Option6";
+        	Camo = "Camo5";
+        	Sleeves = "Rolled_High";
+        };
+        class vn_o_uniform_vc_reg_12_10
+        {
+        	model = "VC_UNI";
+        	Option = "Option6";
+        	Camo = "Camo9";
+        	Sleeves = "Rolled_High";
+        };
+        //Uniform5Camo
+        class vn_o_uniform_vc_05_01
+        {
+        	model = "VC_UNI";
+        	Option = "Option7";
+        	Camo = "Camo1";
+        	Sleeves = "Rolled_High";
+        };
+        class vn_o_uniform_vc_05_04
+        {
+        	model = "VC_UNI";
+        	Option = "Option7";
+        	Camo = "Camo3";
+        	Sleeves = "Rolled_High";
+        };
+        class vn_o_uniform_vc_05_03
+        {
+        	model = "VC_UNI";
+        	Option = "Option7";
+        	Camo = "Camo7";
+        	Sleeves = "Rolled_High";
+        };
+        class vn_o_uniform_vc_05_02
+        {
+        	model = "VC_UNI";
+        	Option = "Option7";
+        	Camo = "Camo10";
+        	Sleeves = "Rolled_High";
+        };
+//VPN_Uniform
+        class vn_o_uniform_nva_navy_01
+        {
+        	model = "VPN_Uniform";
+        	Option = "Option1";
+        	Sleeves = "Full";
+        };
+        class vn_o_uniform_nva_navy_03
+        {
+        	model = "VPN_Uniform";
+        	Option = "Option1";
+        	Sleeves = "Rolled_High";
+        };
+        class vn_o_uniform_nva_navy_02
+        {
+        	model = "VPN_Uniform";
+        	Option = "Option2";
+        	Sleeves = "Full";
+        };
+        class vn_o_uniform_nva_navy_04
+        {
+        	model = "VPN_Uniform";
+        	Option = "Option2";
+        	Sleeves = "Rolled_High";
         };
     };
 };
