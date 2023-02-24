@@ -16,47 +16,55 @@ class XtdGearModels
 {
     class CfgWeapons 
     {
-//BDU_AVRN
-    	class BDU_AVRN
+//BDU_ARVN
+    	class BDU_ARVN
         {
-            label = "BDU AVRN Uniforms";
+            label = "BDU ARVN Uniforms";
             author = "SGTdanny";
-            options[] = {"Option"};
+            options[] = {"Option","Sleeves"};
             class option
             {
                 values[] = {
 					"Option1",
 					"Option2",
 					"Option3",
-					"Option4",
-					"Option5",
-					"Option6"
+					"Option4"
 				};
+        		alwaysSelectable = 1;
 				class Option1 {
-					label = "Option 1";
+					label = "Uniform 1";
         			image = "SOG_ACEAX_Compat\data\ARVN.paa";
 				};
 				class Option2 {
-					label = "Option 2";
+					label = "Uniform 2";
         			image = "SOG_ACEAX_Compat\data\ARVN.paa";
 				};
 				class Option3 {
-					label = "Option 3";
+					label = "Uniform 3";
         			image = "SOG_ACEAX_Compat\data\ARVN.paa";
 				};
 				class Option4 {
-					label = "Option 4";
+					label = "Uniform 4";
         			image = "SOG_ACEAX_Compat\data\ARVN.paa";
 				};
-				class Option5 {
-					label = "Option 5";
-        			image = "SOG_ACEAX_Compat\data\ARVN.paa";
-				};
-				class Option6 {
-					label = "Option 6";
-        			image = "SOG_ACEAX_Compat\data\ARVN.paa";
-				};
-
+            };
+            class Sleeves
+            {
+                values[] = 
+                {
+                    "Full",
+                    "Rolled_High"
+                };
+                class Full {
+                    label = "Full"
+                    changeingame = 1;
+                };
+                class Rolled_High {
+                    label = "Rolled High"
+                    actionLabel="Roll sleeves High";
+                    icon="\z\aceax\addons\gearinfo\data\ui\sleeves_quarter.paa";
+                    changeingame = 1;
+                };
             };
         };
 //BUD_AUS
@@ -1084,33 +1092,37 @@ class XtdGearInfos
 //BDU_ARVN
     	class vn_b_uniform_macv_01_17
         {
-            model = "BDU_AVRN";
-            option = "Option1";
+            model = "BDU_ARVN";
+            Option = "Option1";
         };
         class vn_b_uniform_macv_02_17
         {
-            model = "BDU_AVRN";
-            option = "Option2";
+            model = "BDU_ARVN";
+            Option = "Option2";
+            Sleeves = "Full";
         };
         class vn_b_uniform_macv_03_17
         {
-            model = "BDU_AVRN";
-            option = "Option3";
-        };
-        class vn_b_uniform_macv_04_17
-        {
-            model = "BDU_AVRN";
-            option = "Option4";
+            model = "BDU_ARVN";
+            Option = "Option2";
+            Sleeves = "Rolled_High";
         };
         class vn_b_uniform_macv_05_17
         {
-            model = "BDU_AVRN";
-            option = "Option5";
+            model = "BDU_ARVN";
+            Option = "Option3";
+            Sleeves = "Full"
+        };
+        class vn_b_uniform_macv_04_17
+        {
+            model = "BDU_ARVN";
+            Option = "Option3";
+            Sleeves = "Rolled_High";
         };
         class vn_b_uniform_macv_06_17
         {
-            model = "BDU_AVRN";
-            option = "Option6";
+            model = "BDU_ARVN";
+            Option = "Option4";
         };
 //BDU_AUS
     	class vn_b_uniform_aus_01_01
@@ -2679,5 +2691,6 @@ class XtdGearInfos
         	Option = "Option2";
         	Sleeves = "Rolled_High";
         };
+//END OF UNIFORMS
     };
 };
