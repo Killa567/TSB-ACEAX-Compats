@@ -124,14 +124,42 @@ class XtdGearModels
             };
         };
 //BDU MACV
-        class BDU_MACV_1
+        class BDU_MACV
         {
-            label = "BDU MACV 1 Uniforms";
+            label = "BDU MACV Uniforms";
             author = "SGTdanny";
-            options[] = {"Camo"};
-            class camo
+            options[] = {"Option","Camo","Sleeves"};
+            class Option
             {
-                values[] = {
+            	values[] = 
+            	{
+            		"Option1",
+            		"Option2",
+            		"Option3",
+            		"Option4"
+            	};
+        		alwaysSelectable = 1;
+            	class Option1
+            	{
+            		label = "Uniform 1";
+            	};
+            	class Option2
+            	{
+            		label = "Uniform 2";
+            	};
+            	class Option3
+            	{
+            		label = "Uniform 3";
+            	};
+            	class Option4
+            	{
+            		label = "Uniform 4";
+            	};
+            };
+            class Camo
+            {
+                values[] = 
+                {
 					"Black",
 					"ERDL",
 					"ERDLBR",
@@ -140,284 +168,77 @@ class XtdGearModels
 					"OliveFld",
 					"Spray",
 					"TigerGrn",
-					"Tiger"
-				};
-				class Black {
-					label = "Black";
-					image = "SOG_ACEAX_Compat\data\Black.paa";
-				};
-				class ERDL {
-					label = "ERDL";
-					image = "SOG_ACEAX_Compat\data\ERDL.paa";
-				};
-				class ERDLBR {
-					label = "ERDL Brown";
-					image = "SOG_ACEAX_Compat\data\ERDLBR.paa";
-				};
-				class Leopard {
-					label = "Leopard";
-					image = "SOG_ACEAX_Compat\data\Leopard.paa";
-				};
-				class Olive {
-					label = "Olive";
-					image = "SOG_ACEAX_Compat\data\Olive.paa";
-				};
-				class OliveFld {
-					label = "Olive Field";
-					image = "SOG_ACEAX_Compat\data\OliveFld.paa";
-				};
-				class Spray {
-					label = "Spray";
-					image = "SOG_ACEAX_Compat\data\Spray.paa";
-				};
-				class TigerGrn {
-					label = "Tiger Green";
-					image = "SOG_ACEAX_Compat\data\TigerGrn.paa";
-				};
-				class Tiger {
-					label = "Tiger";
-					image = "SOG_ACEAX_Compat\data\Tiger.paa";
-				};
-            };
-        };
-		class BDU_MACV_2
-        {
-            label = "BDU MACV 2";
-            author = "SGTdanny";
-            options[] = {"Camo"};
-            class camo
-            {
-                values[] = {
-					"ERDL",
-					"ERDLBR",
-					"Leopard",
-					"Olive",
-					"OliveFld",
-					"TigerGrn",
-					"Tiger"
-				};
-				class ERDL {
-					label = "ERDL";
-					image = "SOG_ACEAX_Compat\data\ERDL.paa";
-				};
-				class ERDLBR {
-					label = "ERDL Brown";
-					image = "SOG_ACEAX_Compat\data\ERDLBR.paa";
-				};
-				class Leopard {
-					label = "Leopard";
-					image = "SOG_ACEAX_Compat\data\Leopard.paa";
-				};
-				class Olive {
-					label = "Olive";
-					image = "SOG_ACEAX_Compat\data\Olive.paa";
-				};
-				class OliveFld {
-					label = "Olive Field";
-					image = "SOG_ACEAX_Compat\data\OliveFld.paa";
-				};
-				class TigerGrn {
-					label = "Tiger Green";
-					image = "SOG_ACEAX_Compat\data\TigerGrn.paa";
-				};
-				class Tiger {
-					label = "Tiger";
-					image = "SOG_ACEAX_Compat\data\Tiger.paa";
-				};
-            };
-        };
-        class BDU_MACV_3
-        {
-            label = "BDU MACV 3";
-            author = "SGTdanny";
-            options[] = {"Camo"};
-            class camo
-            {
-                values[] = {
-					"ERDL",
-					"ERDLBR",
-					"Leopard",
-					"Olive",
-					"OliveFld",
-					"TigerGrn",
-					"Tiger"
-				};
-				class ERDL {
-					label = "ERDL";
-					image = "SOG_ACEAX_Compat\data\ERDL.paa";
-				};
-				class ERDLBR {
-					label = "ERDL Brown";
-					image = "SOG_ACEAX_Compat\data\ERDLBR.paa";
-				};
-				class Leopard {
-					label = "Leopard";
-					image = "SOG_ACEAX_Compat\data\Leopard.paa";
-				};
-				class Olive {
-					label = "Olive";
-					image = "SOG_ACEAX_Compat\data\Olive.paa";
-				};
-				class OliveFld {
-					label = "Olive Field";
-					image = "SOG_ACEAX_Compat\data\OliveFld.paa";
-				};
-				class TigerGrn {
-					label = "Tiger Green";
-					image = "SOG_ACEAX_Compat\data\TigerGrn.paa";
-				};
-				class Tiger {
-					label = "Tiger";
-					image = "SOG_ACEAX_Compat\data\Tiger.paa";
-				};
-            };
-        };
-        class BDU_MACV_4
-        {
-            label = "BDU MACV 4";
-            author = "SGTdanny";
-            options[] = {"Camo"};
-            class camo
-            {
-                values[] = {
-					"ERDL",
-					"ERDLBS",
-					"ERDLBR",
-					"Leopard",
-					"Olive",
-					"OliveFld",
-					"TigerGrn",
 					"Tiger",
 					"TigerBS"
 				};
-				class ERDL {
+				class Black 
+				{
+					label = "Black";
+					image = "SOG_ACEAX_Compat\data\Black.paa";
+				};
+				class ERDL 
+				{
 					label = "ERDL";
 					image = "SOG_ACEAX_Compat\data\ERDL.paa";
 				};
-				class ERDLBS {
-					label = "ERDL Base";
-					image = "SOG_ACEAX_Compat\data\ERDLBR.paa";
-				};
-				class ERDLBR {
+				class ERDLBR 
+				{
 					label = "ERDL Brown";
 					image = "SOG_ACEAX_Compat\data\ERDLBR.paa";
 				};
-				class Leopard {
+				class Leopard 
+				{
 					label = "Leopard";
 					image = "SOG_ACEAX_Compat\data\Leopard.paa";
 				};
-				class Olive {
+				class Olive 
+				{
 					label = "Olive";
 					image = "SOG_ACEAX_Compat\data\Olive.paa";
 				};
-				class OliveFld {
+				class OliveFld 
+				{
 					label = "Olive Field";
 					image = "SOG_ACEAX_Compat\data\OliveFld.paa";
 				};
-				class TigerGrn {
+				class Spray 
+				{
+					label = "Spray";
+					image = "SOG_ACEAX_Compat\data\Spray.paa";
+				};
+				class TigerGrn 
+				{
 					label = "Tiger Green";
 					image = "SOG_ACEAX_Compat\data\TigerGrn.paa";
 				};
-				class Tiger {
+				class Tiger 
+				{
 					label = "Tiger";
 					image = "SOG_ACEAX_Compat\data\Tiger.paa";
 				};
-				class TigerBS {
+				class TigerBS 
+				{
 					label = "Tiger Base";
 					image = "SOG_ACEAX_Compat\data\ERDLBR.paa";
 				};
             };
-        };
-        class BDU_MACV_5
-        {
-            label = "BDU MACV 5";
-            author = "SGTdanny";
-            options[] = {"Camo"};
-            class camo
+            class Sleeves
             {
-                values[] = {
-					"ERDL",
-					"ERDLBR",
-					"Leopard",
-					"Olive",
-					"OliveFld",
-					"TigerGrn",
-					"Tiger"
-				};
-				class ERDL {
-					label = "ERDL";
-					image = "SOG_ACEAX_Compat\data\ERDL.paa";
-				};
-				class ERDLBR {
-					label = "ERDL Brown";
-					image = "SOG_ACEAX_Compat\data\ERDLBR.paa";
-				};
-				class Leopard {
-					label = "Leopard";
-					image = "SOG_ACEAX_Compat\data\Leopard.paa";
-				};
-				class Olive {
-					label = "Olive";
-					image = "SOG_ACEAX_Compat\data\Olive.paa";
-				};
-				class OliveFld {
-					label = "Olive Field";
-					image = "SOG_ACEAX_Compat\data\OliveFld.paa";
-				};
-				class TigerGrn {
-					label = "Tiger Green";
-					image = "SOG_ACEAX_Compat\data\TigerGrn.paa";
-				};
-				class Tiger {
-					label = "Tiger";
-					image = "SOG_ACEAX_Compat\data\Tiger.paa";
-				};
-            };
-        };
-        class BDU_MACV_6
-        {
-            label = "BDU MACV 6";
-            author = "SGTdanny";
-            options[] = {"Camo"};
-            class camo
-            {
-                values[] = {
-					"ERDL",
-					"ERDLBR",
-					"Leopard",
-					"Olive",
-					"OliveFld",
-					"TigerGrn",
-					"Tiger"
-				};
-				class ERDL {
-					label = "ERDL";
-					image = "SOG_ACEAX_Compat\data\ERDL.paa";
-				};
-				class ERDLBR {
-					label = "ERDL Brown";
-					image = "SOG_ACEAX_Compat\data\ERDLBR.paa";
-				};
-				class Leopard {
-					label = "Leopard";
-					image = "SOG_ACEAX_Compat\data\Leopard.paa";
-				};
-				class Olive {
-					label = "Olive";
-					image = "SOG_ACEAX_Compat\data\Olive.paa";
-				};
-				class OliveFld {
-					label = "Olive Field";
-					image = "SOG_ACEAX_Compat\data\OliveFld.paa";
-				};
-				class TigerGrn {
-					label = "Tiger Green";
-					image = "SOG_ACEAX_Compat\data\TigerGrn.paa";
-				};
-				class Tiger {
-					label = "Tiger";
-					image = "SOG_ACEAX_Compat\data\Tiger.paa";
-				};
+                values[] = 
+                {
+                    "Full",
+                    "Rolled_High"
+                };
+                class Full {
+                    label = "Full"
+                    changeingame = 1;
+                };
+                class Rolled_High {
+                    label = "Rolled High"
+                    actionLabel="Roll sleeves High";
+                    icon="\z\aceax\addons\gearinfo\data\ui\sleeves_quarter.paa";
+                    changeingame = 1;
+                };
             };
         };
 //BDU_NZ
@@ -573,13 +394,28 @@ class XtdGearModels
         		};
         	};
         };
-//BDU_SOG1
-        class BDU_SOG1
+//BDU_SOG
+        class BDU_SOG
         {
-        	label = "BDU SOG 1 Uniforms";
+        	label = "BDU SOG Uniforms";
         	author = "SGTdanny";
-        	options[] = {"Camo","Pants"};
-        	class camo
+        	options[] = {"Option","Camo","Pants"};
+        	class Option
+        	{
+        		values[] = {
+        			"Option1",
+        			"Option2"
+        		};
+        		class Option1
+        		{
+        			label = "Uniform 1";
+        		};
+        		class Option2
+        		{
+        			label = "Uniform 2";
+        		};
+        	};
+        	class Camo
         	{
         		values[] = {
         			"Black",
@@ -587,79 +423,39 @@ class XtdGearModels
         			"Spray",
         			"Tiger"
         		};
-        		class Black {
+        		class Black 
+        		{
         			label = "Black";
         			image = "SOG_ACEAX_Compat\data\Black.paa";
         		};
-        		class Olive {
+        		class Olive 
+        		{
         			label = "Olive";
         			image = "SOG_ACEAX_Compat\data\OliveFld.paa";
         		};
-        		class Spray {
+        		class Spray 
+        		{
         			label = "Spray";
         			image = "SOG_ACEAX_Compat\data\Spray.paa";
         		};
-        		class Tiger {
+        		class Tiger 
+        		{
         			label = "Tiger";
         			image = "SOG_ACEAX_Compat\data\Tiger.paa";
         		};
         	};
-        	class pants
+        	class Pants
         	{
         		values[] = {
         			"Normal",
         			"Black"
         		};
-        		class Normal {
+        		class Normal 
+        		{
         			label = "Normal";
         		};
-        		class Black {
-        			label = "Black";
-        			image = "SOG_ACEAX_Compat\data\Black.paa";
-        		};
-        	};
-        };
-//BDU_SOG2
-        class BDU_SOG2
-        {
-        	label = "BDU SOG 2 Uniforms";
-        	author = "SGTdanny";
-        	options[] = {"Camo","Pants"};
-        	class camo
-        	{
-        		values[] = {
-        			"Black",
-        			"Olive",
-        			"Spray",
-        			"Tiger"
-        		};
-        		class Black {
-        			label = "Black";
-        			image = "SOG_ACEAX_Compat\data\Black.paa";
-        		};
-        		class Olive {
-        			label = "Olive";
-        			image = "SOG_ACEAX_Compat\data\OliveFld.paa";
-        		};
-        		class Spray {
-        			label = "Spray";
-        			image = "SOG_ACEAX_Compat\data\Spray.paa";
-        		};
-        		class Tiger {
-        			label = "Tiger";
-        			image = "SOG_ACEAX_Compat\data\Tiger.paa";
-        		};
-        	};
-        	class pants
-        	{
-        		values[] = {
-        			"Normal",
-        			"Black"
-        		};
-        		class Normal {
-        			label = "Normal";
-        		};
-        		class Black {
+        		class Black 
+        		{
         			label = "Black";
         			image = "SOG_ACEAX_Compat\data\Black.paa";
         		};
@@ -1370,238 +1166,323 @@ class XtdGearInfos
 //BDU_MACV_1
         class vn_b_uniform_macv_01_03
         {
-            model = "BDU_MACV_1";
-            camo = "Black";
+            model = "BDU_MACV";
+            Option = "Option1";
+            Camo = "Black";
+            Sleeves = "Full";
         };
 		class vn_b_uniform_macv_01_15
         {
-            model = "BDU_MACV_1";
-            camo = "ERDL";
+            model = "BDU_MACV";
+            Option = "Option1";
+            Camo = "ERDL";
+            Sleeves = "Full";
         };
 		class vn_b_uniform_macv_01_06
         {
-            model = "BDU_MACV_1";
-            camo = "ERDLBR";
+            model = "BDU_MACV";
+            Option = "Option1";
+            Camo = "ERDLBR";
+            Sleeves = "Full";
         };
 		class vn_b_uniform_macv_01_08
         {
-            model = "BDU_MACV_1";
-            camo = "Leopard";
+            model = "BDU_MACV";
+            Option = "Option1";
+            Camo = "Leopard";
+            Sleeves = "Full";
         };
 		class vn_b_uniform_macv_01_07
         {
-            model = "BDU_MACV_1";
-            camo = "Olive";
+            model = "BDU_MACV";
+            Option = "Option1";
+            Camo = "Olive";
+            Sleeves = "Full";
         };
 		class vn_b_uniform_macv_01_01
         {
-            model = "BDU_MACV_1";
-            camo = "OliveFld";
+            model = "BDU_MACV";
+            Option = "Option1";
+            Camo = "OliveFld";
+            Sleeves = "Full";
         };
 		class vn_b_uniform_macv_01_04
         {
-            model = "BDU_MACV_1";
-            camo = "Spray";
+            model = "BDU_MACV";
+            Option = "Option1";
+            Camo = "Spray";
+            Sleeves = "Full";
         };
 		class vn_b_uniform_macv_01_05
         {
-            model = "BDU_MACV_1";
-            camo = "TigerGrn";
+            model = "BDU_MACV";
+            Option = "Option1";
+            Camo = "TigerGrn";
+            Sleeves = "Full";
         };
 		class vn_b_uniform_macv_01_02
         {
-            model = "BDU_MACV_1";
-            camo = "Tiger";
+            model = "BDU_MACV";
+            Option = "Option1";
+            Camo = "Tiger";
+            Sleeves = "Full";
         };
 //BDU_MACV_2
 		class vn_b_uniform_macv_02_15
         {
-            model = "BDU_MACV_2";
-            camo = "ERDL";
+            model = "BDU_MACV";
+            Option = "Option2";
+            Camo = "ERDL";
+            Sleeves = "Full";
         };
 		class vn_b_uniform_macv_02_06
         {
-            model = "BDU_MACV_2";
-            camo = "ERDLBR";
+            model = "BDU_MACV";
+            Option = "Option2";
+            Camo = "ERDLBR";
+            Sleeves = "Full";
         };
 		class vn_b_uniform_macv_02_08
         {
-            model = "BDU_MACV_2";
-            camo = "Leopard";
+            model = "BDU_MACV";
+            Option = "Option2";
+            Camo = "Leopard";
+            Sleeves = "Full";
         };
 		class vn_b_uniform_macv_02_07
         {
-            model = "BDU_MACV_2";
-            camo = "Olive";
+            model = "BDU_MACV";
+            Option = "Option2";
+            Camo = "Olive";
+            Sleeves = "Full";
         };
 		class vn_b_uniform_macv_02_01
         {
-            model = "BDU_MACV_2";
-            camo = "OliveFld";
+            model = "BDU_MACV";
+            Option = "Option2";
+            Camo = "OliveFld";
+            Sleeves = "Full";
         };
 		class vn_b_uniform_macv_02_05
         {
-            model = "BDU_MACV_2";
-            camo = "TigerGrn";
+            model = "BDU_MACV";
+            Option = "Option2";
+            Camo = "TigerGrn";
+            Sleeves = "Full";
         };
 		class vn_b_uniform_macv_02_02
         {
-            model = "BDU_MACV_2";
-            camo = "Tiger";
+            model = "BDU_MACV";
+            Option = "Option2";
+            Camo = "Tiger";
+            Sleeves = "Full";
         };
 //BDU_MACV_3
 		class vn_b_uniform_macv_03_15
         {
-            model = "BDU_MACV_3";
-            camo = "ERDL";
+            model = "BDU_MACV";
+            Option = "Option2";
+            Camo = "ERDL";
+            Sleeves = "Rolled_High";
         };
 		class vn_b_uniform_macv_03_06
         {
-            model = "BDU_MACV_3";
-            camo = "ERDLBR";
+            model = "BDU_MACV";
+            Option = "Option2";
+            Camo = "ERDLBR";
+            Sleeves = "Rolled_High";
         };
 		class vn_b_uniform_macv_03_08
         {
-            model = "BDU_MACV_3";
-            camo = "Leopard";
+            model = "BDU_MACV";
+            Option = "Option2";
+            Camo = "Leopard";
+            Sleeves = "Rolled_High";
         };
 		class vn_b_uniform_macv_03_07
         {
-            model = "BDU_MACV_3";
-            camo = "Olive";
+            model = "BDU_MACV";
+            Option = "Option2";
+            Camo = "Olive";
+            Sleeves = "Rolled_High";
         };
 		class vn_b_uniform_macv_03_01
         {
-            model = "BDU_MACV_3";
-            camo = "OliveFld";
+            model = "BDU_MACV";
+            Option = "Option2";
+            Camo = "OliveFld";
+            Sleeves = "Rolled_High";
         };
 		class vn_b_uniform_macv_03_05
         {
-            model = "BDU_MACV_3";
-            camo = "TigerGrn";
+            model = "BDU_MACV";
+            Option = "Option2";
+            Camo = "TigerGrn";
+            Sleeves = "Rolled_High";
         };
 		class vn_b_uniform_macv_03_02
         {
-            model = "BDU_MACV_3";
-            camo = "Tiger";
+            model = "BDU_MACV";
+            Option = "Option2";
+            Camo = "Tiger";
+            Sleeves = "Rolled_High";
         };
 //BDU_MACV_4
 		class vn_b_uniform_macv_04_15
         {
-            model = "BDU_MACV_4";
-            camo = "ERDL";
+            model = "BDU_MACV";
+            Option = "Option3";
+            Camo = "ERDL";
+            Sleeves = "Rolled_High";
         };
         class vn_b_uniform_macv_04_21
         {
-            model = "BDU_MACV_4";
-            camo = "ERDLBS";
+            model = "BDU_MACV";
+            Option = "Option3";
+            Camo = "ERDLBS";
+            Sleeves = "Rolled_High";
         };
 		class vn_b_uniform_macv_04_06
         {
-            model = "BDU_MACV_4";
-            camo = "ERDLBR";
+            model = "BDU_MACV";
+            Option = "Option3";
+            Camo = "ERDLBR";
+            Sleeves = "Rolled_High";
         };
 		class vn_b_uniform_macv_04_08
         {
-            model = "BDU_MACV_4";
-            camo = "Leopard";
+            model = "BDU_MACV";
+            Option = "Option3";
+            Camo = "Leopard";
+            Sleeves = "Rolled_High";
         };
 		class vn_b_uniform_macv_04_07
         {
-            model = "BDU_MACV_4";
-            camo = "Olive";
+            model = "BDU_MACV";
+            Option = "Option3";
+            Camo = "Olive";
+            Sleeves = "Rolled_High";
         };
 		class vn_b_uniform_macv_04_01
         {
-            model = "BDU_MACV_4";
-            camo = "OliveFld";
+            model = "BDU_MACV";
+            Option = "Option3";
+            Camo = "OliveFld";
+            Sleeves = "Rolled_High";
         };
 		class vn_b_uniform_macv_04_05
         {
-            model = "BDU_MACV_4";
-            camo = "TigerGrn";
+            model = "BDU_MACV";
+            Option = "Option3";
+            Camo = "TigerGrn";
+            Sleeves = "Rolled_High";
         };
 		class vn_b_uniform_macv_04_02
         {
-            model = "BDU_MACV_4";
-            camo = "Tiger";
+            model = "BDU_MACV";
+            Option = "Option3";
+            Camo = "Tiger";
+            Sleeves = "Rolled_High";
         };
         class vn_b_uniform_macv_04_20
         {
-            model = "BDU_MACV_4";
-            camo = "TigerBS";
+            model = "BDU_MACV";
+            Option = "Option3";
+            Camo = "TigerBS";
+            Sleeves = "Rolled_High";
         };
 //BDU_MACV_5
 		class vn_b_uniform_macv_05_15
         {
-            model = "BDU_MACV_5";
-            camo = "ERDL";
+            model = "BDU_MACV";
+            Option = "Option3";
+            Camo = "ERDL";
+            Sleeves = "Full";
         };
 		class vn_b_uniform_macv_05_06
         {
-            model = "BDU_MACV_5";
-            camo = "ERDLBR";
+            model = "BDU_MACV";
+            Option = "Option3";
+            Camo = "ERDLBR";
+            Sleeves = "Full";
         };
 		class vn_b_uniform_macv_05_08
         {
-            model = "BDU_MACV_5";
-            camo = "Leopard";
+            model = "BDU_MACV";
+            Option = "Option3";
+            Camo = "Leopard";
+            Sleeves = "Full";
         };
 		class vn_b_uniform_macv_05_07
         {
-            model = "BDU_MACV_5";
-            camo = "Olive";
+            model = "BDU_MACV";
+            Option = "Option3";
+            Camo = "Olive";
+            Sleeves = "Full";
         };
 		class vn_b_uniform_macv_05_01
         {
-            model = "BDU_MACV_5";
-            camo = "OliveFld";
+            model = "BDU_MACV";
+            Option = "Option3";
+            Camo = "OliveFld";
+            Sleeves = "Full";
         };
 		class vn_b_uniform_macv_05_05
         {
-            model = "BDU_MACV_5";
-            camo = "TigerGrn";
+            model = "BDU_MACV";
+            Option = "Option3";
+            Camo = "TigerGrn";
+            Sleeves = "Full";
         };
 		class vn_b_uniform_macv_05_02
         {
-            model = "BDU_MACV_5";
-            camo = "Tiger";
+            model = "BDU_MACV";
+            Option = "Option3";
+            Camo = "Tiger";
+            Sleeves = "Full";
         };
 //BDU_MACV_6
 		class vn_b_uniform_macv_06_15
         {
-            model = "BDU_MACV_6";
-            camo = "ERDL";
+            model = "BDU_MACV";
+            Option = "Option4";
+            Camo = "ERDL";
         };
 		class vn_b_uniform_macv_06_06
         {
-            model = "BDU_MACV_6";
-            camo = "ERDLBR";
+            model = "BDU_MACV";
+            Option = "Option4";
+            Camo = "ERDLBR";
         };
 		class vn_b_uniform_macv_06_08
         {
-            model = "BDU_MACV_6";
-            camo = "Leopard";
+            model = "BDU_MACV";
+            Option = "Option4";
+            Camo = "Leopard";
         };
 		class vn_b_uniform_macv_06_07
         {
-            model = "BDU_MACV_6";
-            camo = "Olive";
+            model = "BDU_MACV";
+            Option = "Option4";
+            Camo = "Olive";
         };
 		class vn_b_uniform_macv_06_01
         {
-            model = "BDU_MACV_6";
-            camo = "OliveFld";
+            model = "BDU_MACV";
+            Option = "Option4";
+            Camo = "OliveFld";
         };
 		class vn_b_uniform_macv_06_05
         {
-            model = "BDU_MACV_6";
-            camo = "TigerGrn";
+            model = "BDU_MACV";
+            Option = "Option4";
+            Camo = "TigerGrn";
         };
 		class vn_b_uniform_macv_06_02
         {
-            model = "BDU_MACV_6";
-            camo = "Tiger";
+            model = "BDU_MACV";
+            Option = "Option4";
+            Camo = "Tiger";
         };
 //BDU_NZ
     	class vn_b_uniform_nz_01_01
@@ -1712,80 +1593,91 @@ class XtdGearInfos
             model = "BDU_SAS";
             option = "Option3";
         };
-//BDU_SOG1
+//BDU_SOG
         class vn_b_uniform_sog_01_03
         {
-            model = "BDU_SOG1";
-            camo = "Black";
-            pants = "Normal";
+            model = "BDU_SOG";
+            Option = "Option1";
+            Camo = "Black";
+            Pants = "Normal";
 
         };
     	class vn_b_uniform_sog_01_01
         {
-            model = "BDU_SOG1";
-            camo = "Olive";
-            pants = "Normal";
+            model = "BDU_SOG";
+            Option = "Option1";
+            Camo = "Olive";
+            Pants = "Normal";
         };
     	class vn_b_uniform_sog_01_04
         {
-            model = "BDU_SOG1";
-            camo = "Spray";
-            pants = "Normal";
+            model = "BDU_SOG";
+            Option = "Option1";
+            Camo = "Spray";
+            Pants = "Normal";
         };
     	class vn_b_uniform_sog_01_06 //black pants
         {
-            model = "BDU_SOG1";
-            camo = "Spray";
-            pants = "Black";
+            model = "BDU_SOG";
+            Option = "Option1";
+            Camo = "Spray";
+            Pants = "Black";
         };
     	class vn_b_uniform_sog_01_02
         {
-            model = "BDU_SOG1";
-            camo = "Tiger";
-            pants = "Normal";
+            model = "BDU_SOG";
+            Option = "Option1";
+            Camo = "Tiger";
+            Pants = "Normal";
         };
     	class vn_b_uniform_sog_01_05 //black pants
         {
-            model = "BDU_SOG1";
-            camo = "Tiger";
-            pants = "Black";
+            model = "BDU_SOG";
+            Option = "Option1";
+            Camo = "Tiger";
+            Pants = "Black";
         };
-//BDU_SOG2
         class vn_b_uniform_sog_02_03
         {
-            model = "BDU_SOG2";
-            camo = "Black";
-            pants = "Normal";
+            model = "BDU_SOG";
+            Option = "Option2";
+            Camo = "Black";
+            Pants = "Normal";
         };
     	class vn_b_uniform_sog_02_01
         {
-            model = "BDU_SOG2";
-            camo = "Olive";
-            pants = "Normal";
+            model = "BDU_SOG";
+            Option = "Option2";
+            Camo = "Olive";
+            Pants = "Normal";
         };
     	class vn_b_uniform_sog_02_04
         {
-            model = "BDU_SOG2";
-            camo = "Spray";
-            pants = "Normal";
+            model = "BDU_SOG";
+            Option = "Option2";
+            Camo = "Spray";
+            Pants = "Normal";
         };
     	class vn_b_uniform_sog_02_06 //black pants
         {
-            model = "BDU_SOG2";
-            camo = "Spray";
-            pants = "Black";
+            model = "BDU_SOG";
+            Option = "Option2";
+            Camo = "Spray";
+            Pants = "Black";
         };
     	class vn_b_uniform_sog_02_02
         {
-            model = "BDU_SOG2";
-            camo = "Tiger";
-            pants = "Normal";
+            model = "BDU_SOG";
+            Option = "Option2";
+            Camo = "Tiger";
+            Pants = "Normal";
         };
     	class vn_b_uniform_sog_02_05 //black pants
         {
-            model = "BDU_SOG2";
-            camo = "Tiger";
-            pants = "Black";
+            model = "BDU_SOG";
+            Option = "Option2";
+            Camo = "Tiger";
+            Pants = "Black";
         };
 //NVA_65
         class vn_o_uniform_nva_army_01_01 //1
