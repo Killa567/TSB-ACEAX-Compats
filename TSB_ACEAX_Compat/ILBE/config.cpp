@@ -62,131 +62,239 @@ class XtdGearModels
 					"SKDIG",
 					"SKDIGD",
 					"TROPENTARN",
+					"MULTITARN",
 					"UCP",
-					"VZOR",
+					"VZORD",
+					"VZORW",
 					"WINTER",
 					"WzD",
-					"WzW"
+					"WzW",
+					"TFWAlpine",
+					"TFWAird",
+					"TFWBlack",
+					"TFWCoyote",
+					"TFWGreen",
+					"TFWMarpatD",
+					"TFWMarpatWD",
+					"TFWMCT",
+					"TFWMulticam",
+					"TFWOCP",
+					"TFWWD"
 				};
 				class AAF
 				{
 					label="AAF";
+					image="TSB_ACEAX_Compat\data\AAF.paa";
 				};
 				class AOR2
 				{
 					label="AOR2";
+					image="TSB_ACEAX_Compat\data\AOR2.paa";
 				};
 				class ATACSAU
 				{
 					label="ATACSAU";
+					image="TSB_ACEAX_Compat\data\ATACSAU.paa";
 				};
 				class ATACSFG
 				{
 					label="ATACSFG";
+					image="TSB_ACEAX_Compat\data\ATACSFG.paa";
 				};
 				class Black
 				{
 					label="Black";
+					image="TSB_ACEAX_Compat\data\Black.paa";
 				};
 				class CADPATAIRD
 				{
 					label="CADPAT A";
+					image="TSB_ACEAX_Compat\data\CADPATA.paa";
 				};
 				class CADPATTEMP
 				{
 					label="CADPAT T";
+					image="TSB_ACEAX_Compat\data\CADPATT.paa";
 				};
 				class CTRG
 				{
 					label="CTRG";
+					image="TSB_ACEAX_Compat\data\CTRG.paa";
 				};
 				class DPMT
 				{
 					label="DPM T";
+					image="TSB_ACEAX_Compat\data\DPMT.paa";
 				};
 				class DPMW
 				{
 					label="DPM W";
+					image="TSB_ACEAX_Compat\data\DPMW.paa";
 				};
 				class EMRS
 				{
 					label="EMR S";
+					image="TSB_ACEAX_Compat\data\EMRS.paa";
 				};
 				class FLECKTARN
 				{
 					label="FLECKTARN";
+					image="TSB_ACEAX_Compat\data\FLECKTARN.paa";
 				};
 				class GREEN
 				{
 					label="GREEN";
+					image="TSB_ACEAX_Compat\data\GREENILBE.paa";
 				};
 				class GREENHEX
 				{
 					label="GREENHEX";
+					image="TSB_ACEAX_Compat\data\GREENHEX.paa";
 				};
 				class HEX
 				{
 					label="HEX";
+					image="TSB_ACEAX_Compat\data\HEX.paa";
 				};
 				class KLDESERT
 				{
 					label="KL DESERT";
+					image="TSB_ACEAX_Compat\data\KLDESERT.paa";
 				};
 				class M81W
 				{
 					label="M81 W";
+					image="TSB_ACEAX_Compat\data\M81W.paa";
 				};
 				class MTP
 				{
 					label="MTP";
+					image="TSB_ACEAX_Compat\data\MTP.paa";
 				};
 				class MULTICAM
 				{
 					label="MULTICAM";
+					image="TSB_ACEAX_Compat\data\MC2.paa";
 				};
 				class MULTICAMAIRD
 				{
 					label="MULTICAM A";
+					image="TSB_ACEAX_Compat\data\MCA.paa";
 				};
 				class MULTICAMTROPIC
 				{
 					label="MULTICAM T";
+					image="TSB_ACEAX_Compat\data\MCT2.paa";
 				};
 				class MULTICAMVSM
 				{
 					label="MULTICAM VSM";
+					image="TSB_ACEAX_Compat\data\MC3.paa";
 				};
 				class SKDIG
 				{
 					label="SK DIGITAL";
+					image="TSB_ACEAX_Compat\data\SKDIGITAL.paa";
 				};
 				class SKDIGD
 				{
 					label="SK DIGITAL D";
+					image="TSB_ACEAX_Compat\data\SKDIGITALD.paa";
 				};
 				class TROPENTARN
 				{
 					label="TROPENTARN";
+					image="TSB_ACEAX_Compat\data\TROPENTARN.paa";
+				};
+				class MULTITARN
+				{
+					label="MULTITARN";
+					image="TSB_ACEAX_Compat\data\MULTITARN.paa";
 				};
 				class UCP
 				{
 					label="UCP";
+					image="TSB_ACEAX_Compat\data\UCP.paa";
 				};
-				class VZOR
+				class VZORD
+				{
+					label="VZOR 95 D";
+					image="TSB_ACEAX_Compat\data\VZOR95D.paa";
+				};
+				class VZORW
 				{
 					label="VZOR 95 W";
+					image="TSB_ACEAX_Compat\data\VZOR95W.paa";
 				};
 				class WINTER
 				{
 					label="WINTER";
+					image="TSB_ACEAX_Compat\data\wht.paa";
 				};
 				class WzD
 				{
-					label="Wz.93 Des";
+					label="Wz.93 D";
+					image="TSB_ACEAX_Compat\data\WZ93D.paa";
 				};
 				class WzW
 				{
-					label="Wz.93 Wdl";
+					label="Wz.93 Wd";
+					image="TSB_ACEAX_Compat\data\WZ93WD.paa";
+				};
+				class TFWAlpine
+				{
+					label="Alpine";
+					image="TSB_ACEAX_Compat\data\ALP.paa";
+				};
+				class TFWAird
+				{
+					label="Aird";
+					image="TSB_ACEAX_Compat\data\ARD.paa";
+				};
+				class TFWBlack
+				{
+					label="Black";
+					image="TSB_ACEAX_Compat\data\Black.paa";
+				};
+				class TFWCoyote
+				{
+					label="Coyote";
+					image="TSB_ACEAX_Compat\data\COYOTE.paa";
+				};
+				class TFWGreen
+				{
+					label="Green";
+					image="TSB_ACEAX_Compat\data\GREENBROWN.paa";
+				};
+				class TFWMarpatD
+				{
+					label="Marpat-D";
+					image="TSB_ACEAX_Compat\data\MARPATD.paa";
+				};
+				class TFWMarpatWD
+				{
+					label="Marpat-Wd";
+					image="TSB_ACEAX_Compat\data\MARPATWD.paa";
+				};
+				class TFWMulticam
+				{
+					label="Multicam";
+					image="TSB_ACEAX_Compat\data\MC.paa";
+				};
+				class TFWMCT
+				{
+					label="Multicam T";
+					image="TSB_ACEAX_Compat\data\MCT.paa";
+				};
+				class TFWOCP
+				{
+					label="OCP";
+					image="TSB_ACEAX_Compat\data\OCP2.paa";
+				};
+				class TFWWD
+				{
+					label="Marpat-Wd 2";
+					image="TSB_ACEAX_Compat\data\MARPATWD2.paa";
 				};
 			};
 		};
@@ -249,166 +357,217 @@ class XtdGearModels
 				class AAF
 				{
 					label="AAF";
+					image="TSB_ACEAX_Compat\data\AAF.paa";
 				};
 				class AOR2
 				{
 					label="AOR2";
+					image="TSB_ACEAX_Compat\data\AOR2.paa";
 				};
 				class ATACSAU
 				{
 					label="ATACSAU";
+					image="TSB_ACEAX_Compat\data\ATACSAU.paa";
 				};
 				class ATACSFG
 				{
 					label="ATACSFG";
+					image="TSB_ACEAX_Compat\data\ATACSFG.paa";
 				};
 				class Black
 				{
 					label="Black";
+					image="TSB_ACEAX_Compat\data\Black.paa";
 				};
 				class CADPATAIRD
 				{
 					label="CADPAT A";
+					image="TSB_ACEAX_Compat\data\CADPATA.paa";
 				};
 				class CADPATTEMP
 				{
 					label="CADPAT T";
+					image="TSB_ACEAX_Compat\data\CADPATT.paa";
 				};
 				class CTRG
 				{
 					label="CTRG";
+					image="TSB_ACEAX_Compat\data\CTRG.paa";
 				};
 				class DPMT
 				{
 					label="DPM T";
+					image="TSB_ACEAX_Compat\data\DPMT.paa";
 				};
 				class DPMW
 				{
 					label="DPM W";
+					image="TSB_ACEAX_Compat\data\DPMW.paa";
 				};
 				class EMRS
 				{
 					label="EMR S";
+					image="TSB_ACEAX_Compat\data\EMRS.paa";
 				};
 				class FLECKTARN
 				{
 					label="FLECKTARN";
+					image="TSB_ACEAX_Compat\data\FLECKTARN.paa";
 				};
 				class GREEN
 				{
 					label="GREEN";
+					image="TSB_ACEAX_Compat\data\GREENILBE.paa";
 				};
 				class GREENHEX
 				{
 					label="GREENHEX";
+					image="TSB_ACEAX_Compat\data\GREENHEX.paa";
 				};
 				class HEX
 				{
 					label="HEX";
+					image="TSB_ACEAX_Compat\data\HEX.paa";
 				};
 				class KLDESERT
 				{
 					label="KL DESERT";
+					image="TSB_ACEAX_Compat\data\KLDESERT.paa";
 				};
 				class M81W
 				{
 					label="M81 W";
+					image="TSB_ACEAX_Compat\data\M81W.paa";
 				};
 				class MTP
 				{
 					label="MTP";
+					image="TSB_ACEAX_Compat\data\MTP.paa";
 				};
 				class MULTICAM
 				{
 					label="MULTICAM";
+					image="TSB_ACEAX_Compat\data\MC2.paa";
 				};
 				class MULTICAMAIRD
 				{
 					label="MULTICAM A";
+					image="TSB_ACEAX_Compat\data\MCA.paa";
 				};
 				class MULTICAMTROPIC
 				{
 					label="MULTICAM T";
+					image="TSB_ACEAX_Compat\data\MCT2.paa";
 				};
 				class MULTICAMVSM
 				{
 					label="MULTICAM VSM";
+					image="TSB_ACEAX_Compat\data\MC3.paa";
 				};
 				class SKDIG
 				{
 					label="SK DIGITAL";
+					image="TSB_ACEAX_Compat\data\SKDIGITAL.paa";
 				};
 				class SKDIGD
 				{
 					label="SK DIGITAL D";
+					image="TSB_ACEAX_Compat\data\SKDIGITALD.paa";
 				};
 				class TROPENTARN
 				{
 					label="TROPENTARN";
+					image="TSB_ACEAX_Compat\data\TROPENTARN.paa";
+				};
+				class MULTITARN
+				{
+					label="MULTITARN";
+					image="TSB_ACEAX_Compat\data\MULTITARN.paa";
 				};
 				class UCP
 				{
 					label="UCP";
+					image="TSB_ACEAX_Compat\data\UCP.paa";
 				};
-				class VZOR
+				class VZORD
+				{
+					label="VZOR 95 D";
+					image="TSB_ACEAX_Compat\data\VZOR95D.paa";
+				};
+				class VZORW
 				{
 					label="VZOR 95 W";
+					image="TSB_ACEAX_Compat\data\VZOR95W.paa";
 				};
 				class WINTER
 				{
 					label="WINTER";
+					image="TSB_ACEAX_Compat\data\wht.paa";
 				};
 				class WzD
 				{
-					label="Wz.93 Des";
+					label="Wz.93 D";
+					image="TSB_ACEAX_Compat\data\WZ93D.paa";
 				};
 				class WzW
 				{
-					label="Wz.93 Wdl";
+					label="Wz.93 Wd";
+					image="TSB_ACEAX_Compat\data\WZ93WD.paa";
 				};
 				class TFWAlpine
 				{
 					label="Alpine";
+					image="TSB_ACEAX_Compat\data\ALP.paa";
 				};
 				class TFWAird
 				{
 					label="Aird";
+					image="TSB_ACEAX_Compat\data\ARD.paa";
 				};
 				class TFWBlack
 				{
 					label="Black";
+					image="TSB_ACEAX_Compat\data\Black.paa";
 				};
 				class TFWCoyote
 				{
 					label="Coyote";
+					image="TSB_ACEAX_Compat\data\COYOTE.paa";
 				};
 				class TFWGreen
 				{
 					label="Green";
+					image="TSB_ACEAX_Compat\data\GREENBROWN.paa";
 				};
 				class TFWMarpatD
 				{
-					label="Marpat Desert";
+					label="Marpat-D";
+					image="TSB_ACEAX_Compat\data\MARPATD.paa";
 				};
 				class TFWMarpatWD
 				{
-					label="Marpat Woodland";
-				};
-				class TFWMCT
-				{
-					label="Multicam Tropic";
+					label="Marpat-Wd";
+					image="TSB_ACEAX_Compat\data\MARPATWD.paa";
 				};
 				class TFWMulticam
 				{
 					label="Multicam";
+					image="TSB_ACEAX_Compat\data\MC.paa";
+				};
+				class TFWMCT
+				{
+					label="Multicam T";
+					image="TSB_ACEAX_Compat\data\MCT.paa";
 				};
 				class TFWOCP
 				{
 					label="OCP";
+					image="TSB_ACEAX_Compat\data\OCP2.paa";
 				};
 				class TFWWD
 				{
-					label="Marpat Woodland 2";
+					label="Marpat-Wd 2";
+					image="TSB_ACEAX_Compat\data\MARPATWD2.paa";
 				};
 			};
 		};
@@ -471,166 +630,217 @@ class XtdGearModels
 				class AAF
 				{
 					label="AAF";
+					image="TSB_ACEAX_Compat\data\AAF.paa";
 				};
 				class AOR2
 				{
 					label="AOR2";
+					image="TSB_ACEAX_Compat\data\AOR2.paa";
 				};
 				class ATACSAU
 				{
 					label="ATACSAU";
+					image="TSB_ACEAX_Compat\data\ATACSAU.paa";
 				};
 				class ATACSFG
 				{
 					label="ATACSFG";
+					image="TSB_ACEAX_Compat\data\ATACSFG.paa";
 				};
 				class Black
 				{
 					label="Black";
+					image="TSB_ACEAX_Compat\data\Black.paa";
 				};
 				class CADPATAIRD
 				{
 					label="CADPAT A";
+					image="TSB_ACEAX_Compat\data\CADPATA.paa";
 				};
 				class CADPATTEMP
 				{
 					label="CADPAT T";
+					image="TSB_ACEAX_Compat\data\CADPATT.paa";
 				};
 				class CTRG
 				{
 					label="CTRG";
+					image="TSB_ACEAX_Compat\data\CTRG.paa";
 				};
 				class DPMT
 				{
 					label="DPM T";
+					image="TSB_ACEAX_Compat\data\DPMT.paa";
 				};
 				class DPMW
 				{
 					label="DPM W";
+					image="TSB_ACEAX_Compat\data\DPMW.paa";
 				};
 				class EMRS
 				{
 					label="EMR S";
+					image="TSB_ACEAX_Compat\data\EMRS.paa";
 				};
 				class FLECKTARN
 				{
 					label="FLECKTARN";
+					image="TSB_ACEAX_Compat\data\FLECKTARN.paa";
 				};
 				class GREEN
 				{
 					label="GREEN";
+					image="TSB_ACEAX_Compat\data\GREENILBE.paa";
 				};
 				class GREENHEX
 				{
 					label="GREENHEX";
+					image="TSB_ACEAX_Compat\data\GREENHEX.paa";
 				};
 				class HEX
 				{
 					label="HEX";
+					image="TSB_ACEAX_Compat\data\HEX.paa";
 				};
 				class KLDESERT
 				{
 					label="KL DESERT";
+					image="TSB_ACEAX_Compat\data\KLDESERT.paa";
 				};
 				class M81W
 				{
 					label="M81 W";
+					image="TSB_ACEAX_Compat\data\M81W.paa";
 				};
 				class MTP
 				{
 					label="MTP";
+					image="TSB_ACEAX_Compat\data\MTP.paa";
 				};
 				class MULTICAM
 				{
 					label="MULTICAM";
+					image="TSB_ACEAX_Compat\data\MC2.paa";
 				};
 				class MULTICAMAIRD
 				{
 					label="MULTICAM A";
+					image="TSB_ACEAX_Compat\data\MCA.paa";
 				};
 				class MULTICAMTROPIC
 				{
 					label="MULTICAM T";
+					image="TSB_ACEAX_Compat\data\MCT2.paa";
 				};
 				class MULTICAMVSM
 				{
 					label="MULTICAM VSM";
+					image="TSB_ACEAX_Compat\data\MC3.paa";
 				};
 				class SKDIG
 				{
 					label="SK DIGITAL";
+					image="TSB_ACEAX_Compat\data\SKDIGITAL.paa";
 				};
 				class SKDIGD
 				{
 					label="SK DIGITAL D";
+					image="TSB_ACEAX_Compat\data\SKDIGITALD.paa";
 				};
 				class TROPENTARN
 				{
 					label="TROPENTARN";
+					image="TSB_ACEAX_Compat\data\TROPENTARN.paa";
+				};
+				class MULTITARN
+				{
+					label="MULTITARN";
+					image="TSB_ACEAX_Compat\data\MULTITARN.paa";
 				};
 				class UCP
 				{
 					label="UCP";
+					image="TSB_ACEAX_Compat\data\UCP.paa";
 				};
-				class VZOR
+				class VZORD
+				{
+					label="VZOR 95 D";
+					image="TSB_ACEAX_Compat\data\VZOR95D.paa";
+				};
+				class VZORW
 				{
 					label="VZOR 95 W";
+					image="TSB_ACEAX_Compat\data\VZOR95W.paa";
 				};
 				class WINTER
 				{
 					label="WINTER";
+					image="TSB_ACEAX_Compat\data\wht.paa";
 				};
 				class WzD
 				{
-					label="Wz.93 Des";
+					label="Wz.93 D";
+					image="TSB_ACEAX_Compat\data\WZ93D.paa";
 				};
 				class WzW
 				{
-					label="Wz.93 Wdl";
+					label="Wz.93 Wd";
+					image="TSB_ACEAX_Compat\data\WZ93WD.paa";
 				};
 				class TFWAlpine
 				{
 					label="Alpine";
+					image="TSB_ACEAX_Compat\data\ALP.paa";
 				};
 				class TFWAird
 				{
 					label="Aird";
+					image="TSB_ACEAX_Compat\data\ARD.paa";
 				};
 				class TFWBlack
 				{
 					label="Black";
+					image="TSB_ACEAX_Compat\data\Black.paa";
 				};
 				class TFWCoyote
 				{
 					label="Coyote";
+					image="TSB_ACEAX_Compat\data\COYOTE.paa";
 				};
 				class TFWGreen
 				{
 					label="Green";
+					image="TSB_ACEAX_Compat\data\GREENBROWN.paa";
 				};
 				class TFWMarpatD
 				{
-					label="Marpat Desert";
+					label="Marpat-D";
+					image="TSB_ACEAX_Compat\data\MARPATD.paa";
 				};
 				class TFWMarpatWD
 				{
-					label="Marpat Woodland";
-				};
-				class TFWMCT
-				{
-					label="Multicam Tropic";
+					label="Marpat-Wd";
+					image="TSB_ACEAX_Compat\data\MARPATWD.paa";
 				};
 				class TFWMulticam
 				{
 					label="Multicam";
+					image="TSB_ACEAX_Compat\data\MC.paa";
+				};
+				class TFWMCT
+				{
+					label="Multicam T";
+					image="TSB_ACEAX_Compat\data\MCT.paa";
 				};
 				class TFWOCP
 				{
 					label="OCP";
+					image="TSB_ACEAX_Compat\data\OCP2.paa";
 				};
 				class TFWWD
 				{
-					label="Woodland";
+					label="Marpat-Wd 2";
+					image="TSB_ACEAX_Compat\data\MARPATWD2.paa";
 				};
 			};
 		};
@@ -693,166 +903,217 @@ class XtdGearModels
 				class AAF
 				{
 					label="AAF";
+					image="TSB_ACEAX_Compat\data\AAF.paa";
 				};
 				class AOR2
 				{
 					label="AOR2";
+					image="TSB_ACEAX_Compat\data\AOR2.paa";
 				};
 				class ATACSAU
 				{
 					label="ATACSAU";
+					image="TSB_ACEAX_Compat\data\ATACSAU.paa";
 				};
 				class ATACSFG
 				{
 					label="ATACSFG";
+					image="TSB_ACEAX_Compat\data\ATACSFG.paa";
 				};
 				class Black
 				{
 					label="Black";
+					image="TSB_ACEAX_Compat\data\Black.paa";
 				};
 				class CADPATAIRD
 				{
 					label="CADPAT A";
+					image="TSB_ACEAX_Compat\data\CADPATA.paa";
 				};
 				class CADPATTEMP
 				{
 					label="CADPAT T";
+					image="TSB_ACEAX_Compat\data\CADPATT.paa";
 				};
 				class CTRG
 				{
 					label="CTRG";
+					image="TSB_ACEAX_Compat\data\CTRG.paa";
 				};
 				class DPMT
 				{
 					label="DPM T";
+					image="TSB_ACEAX_Compat\data\DPMT.paa";
 				};
 				class DPMW
 				{
 					label="DPM W";
+					image="TSB_ACEAX_Compat\data\DPMW.paa";
 				};
 				class EMRS
 				{
 					label="EMR S";
+					image="TSB_ACEAX_Compat\data\EMRS.paa";
 				};
 				class FLECKTARN
 				{
 					label="FLECKTARN";
+					image="TSB_ACEAX_Compat\data\FLECKTARN.paa";
 				};
 				class GREEN
 				{
 					label="GREEN";
+					image="TSB_ACEAX_Compat\data\GREENILBE.paa";
 				};
 				class GREENHEX
 				{
 					label="GREENHEX";
+					image="TSB_ACEAX_Compat\data\GREENHEX.paa";
 				};
 				class HEX
 				{
 					label="HEX";
+					image="TSB_ACEAX_Compat\data\HEX.paa";
 				};
 				class KLDESERT
 				{
 					label="KL DESERT";
+					image="TSB_ACEAX_Compat\data\KLDESERT.paa";
 				};
 				class M81W
 				{
 					label="M81 W";
+					image="TSB_ACEAX_Compat\data\M81W.paa";
 				};
 				class MTP
 				{
 					label="MTP";
+					image="TSB_ACEAX_Compat\data\MTP.paa";
 				};
 				class MULTICAM
 				{
 					label="MULTICAM";
+					image="TSB_ACEAX_Compat\data\MC2.paa";
 				};
 				class MULTICAMAIRD
 				{
 					label="MULTICAM A";
+					image="TSB_ACEAX_Compat\data\MCA.paa";
 				};
 				class MULTICAMTROPIC
 				{
 					label="MULTICAM T";
+					image="TSB_ACEAX_Compat\data\MCT2.paa";
 				};
 				class MULTICAMVSM
 				{
 					label="MULTICAM VSM";
+					image="TSB_ACEAX_Compat\data\MC3.paa";
 				};
 				class SKDIG
 				{
 					label="SK DIGITAL";
+					image="TSB_ACEAX_Compat\data\SKDIGITAL.paa";
 				};
 				class SKDIGD
 				{
 					label="SK DIGITAL D";
+					image="TSB_ACEAX_Compat\data\SKDIGITALD.paa";
 				};
 				class TROPENTARN
 				{
 					label="TROPENTARN";
+					image="TSB_ACEAX_Compat\data\TROPENTARN.paa";
+				};
+				class MULTITARN
+				{
+					label="MULTITARN";
+					image="TSB_ACEAX_Compat\data\MULTITARN.paa";
 				};
 				class UCP
 				{
 					label="UCP";
+					image="TSB_ACEAX_Compat\data\UCP.paa";
 				};
-				class VZOR
+				class VZORD
+				{
+					label="VZOR 95 D";
+					image="TSB_ACEAX_Compat\data\VZOR95D.paa";
+				};
+				class VZORW
 				{
 					label="VZOR 95 W";
+					image="TSB_ACEAX_Compat\data\VZOR95W.paa";
 				};
 				class WINTER
 				{
 					label="WINTER";
+					image="TSB_ACEAX_Compat\data\wht.paa";
 				};
 				class WzD
 				{
-					label="Wz.93 Des";
+					label="Wz.93 D";
+					image="TSB_ACEAX_Compat\data\WZ93D.paa";
 				};
 				class WzW
 				{
-					label="Wz.93 Wdl";
+					label="Wz.93 Wd";
+					image="TSB_ACEAX_Compat\data\WZ93WD.paa";
 				};
 				class TFWAlpine
 				{
 					label="Alpine";
+					image="TSB_ACEAX_Compat\data\ALP.paa";
 				};
 				class TFWAird
 				{
 					label="Aird";
+					image="TSB_ACEAX_Compat\data\ARD.paa";
 				};
 				class TFWBlack
 				{
 					label="Black";
+					image="TSB_ACEAX_Compat\data\Black.paa";
 				};
 				class TFWCoyote
 				{
 					label="Coyote";
+					image="TSB_ACEAX_Compat\data\COYOTE.paa";
 				};
 				class TFWGreen
 				{
 					label="Green";
+					image="TSB_ACEAX_Compat\data\GREENBROWN.paa";
 				};
 				class TFWMarpatD
 				{
-					label="Marpat Desert";
+					label="Marpat-D";
+					image="TSB_ACEAX_Compat\data\MARPATD.paa";
 				};
 				class TFWMarpatWD
 				{
-					label="Marpat Woodland";
-				};
-				class TFWMCT
-				{
-					label="Multicam Tropic";
+					label="Marpat-Wd";
+					image="TSB_ACEAX_Compat\data\MARPATWD.paa";
 				};
 				class TFWMulticam
 				{
 					label="Multicam";
+					image="TSB_ACEAX_Compat\data\MC.paa";
+				};
+				class TFWMCT
+				{
+					label="Multicam T";
+					image="TSB_ACEAX_Compat\data\MCT.paa";
 				};
 				class TFWOCP
 				{
 					label="OCP";
+					image="TSB_ACEAX_Compat\data\OCP2.paa";
 				};
 				class TFWWD
 				{
-					label="Woodland";
+					label="Marpat-Wd 2";
+					image="TSB_ACEAX_Compat\data\MARPATWD2.paa";
 				};
 			};
 		};
@@ -987,6 +1248,11 @@ class XtdGearInfos
 			model="ILBE_ANT";
 			camo="TROPENTARN";
 		};
+		class YSA_ilbe_whipext_Multitarn
+		{
+			model="ILBE_ANT";
+			camo="MULTITARN";
+		};
 		class YSA_ilbe_whipext_UCP
 		{
 			model="ILBE_ANT";
@@ -995,7 +1261,12 @@ class XtdGearInfos
 		class YSA_ilbe_whipext_Vzor95W
 		{
 			model="ILBE_ANT";
-			camo="VZOR";
+			camo="VZORW";
+		};
+		class YSA_ilbe_whipext_Vzor95D
+		{
+			model="ILBE_ANT";
+			camo="VZORD";
 		};
 		class YSA_ilbe_whipext_Winter
 		{
@@ -1011,6 +1282,61 @@ class XtdGearInfos
 		{
 			model="ILBE_ANT";
 			camo="WzW";
+		};
+		class tfw_ilbe_whipext_alpine
+		{
+			model="ILBE_ANT";
+			camo="TFWAlpine";
+		};
+		class tfw_ilbe_whipext_arid
+		{
+			model="ILBE_ANT";
+			camo="TFWAird";
+		};
+		class tfw_ilbe_whipext_black
+		{
+			model="ILBE_ANT";
+			camo="TFWBlack";
+		};
+		class tfw_ilbe_whipext_coy
+		{
+			model="ILBE_ANT";
+			camo="TFWCoyote";
+		};
+		class tfw_ilbe_whipext_gr
+		{
+			model="ILBE_ANT";
+			camo="TFWGreen";
+		};
+		class tfw_ilbe_whipext_d
+		{
+			model="ILBE_ANT";
+			camo="TFWMarpatD";
+		};
+		class tfw_ilbe_whipext_wd
+		{
+			model="ILBE_ANT";
+			camo="TFWMarpatWD";
+		};
+		class tfw_ilbe_whipext_mct
+		{
+			model="ILBE_ANT";
+			camo="TFWMCT";
+		};
+		class tfw_ilbe_whipext_mc
+		{
+			model="ILBE_ANT";
+			camo="TFWMulticam";
+		};
+		class tfw_ilbe_whipext_ocp
+		{
+			model="ILBE_ANT";
+			camo="TFWOCP";
+		};
+		class tfw_ilbe_whipext_wd2
+		{
+			model="ILBE_ANT";
+			camo="TFWWD";
 		};
 		class YSA_ilbe_blade_AAF
 		{
