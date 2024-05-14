@@ -16,6 +16,6 @@ class CfgPatches
 		{
 			"aceax_gearinfo"
 		};
-		author="Killa567/Frost99";
+		author="Killa567/Frost993/SGTdanny";
 	};
 };
