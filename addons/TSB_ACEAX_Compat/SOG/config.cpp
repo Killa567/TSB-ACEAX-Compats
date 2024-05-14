@@ -1,8 +1,8 @@
 class CfgPatches
 {
-    class SOG_ACEAX_Compat
+    class TSB_ACEAX_Compat_SOG
     {
-        name="SOG_ACEAX_Compat";
+        name="TSB_ACEAX_Compat_SOG";
         units[]={};
         weapons[]={};
         requiredAddons[]=
