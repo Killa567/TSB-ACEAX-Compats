@@ -14,6 +14,7 @@ class CfgPatches
 		version="0.1.0.0";
 		versionStr="0.1.0.0";
 		versionAr[]={0,1,0,0};
+		skipWhenMissingDependencies = 1;
 	};
 };
 class XtdGearModels

@@ -19,6 +19,7 @@ class CfgPatches
 			"tfw_radios_ilbe"
 		};
 		author="Frost99";
+		skipWhenMissingDependencies = 1;
 	};
 };
 class XtdGearModels

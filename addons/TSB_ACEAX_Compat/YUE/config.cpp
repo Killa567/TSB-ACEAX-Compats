@@ -17,6 +17,7 @@ class CfgPatches
 			"aceax_gearinfo"
 		};
 		author="Frost99";
+        skipWhenMissingDependencies = 1;
 	};
 };
 

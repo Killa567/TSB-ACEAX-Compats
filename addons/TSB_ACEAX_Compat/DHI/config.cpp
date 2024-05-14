@@ -11,6 +11,7 @@ class CfgPatches
 			"aceax_gearinfo"
 		};
 		author="Killa567";
+		skipWhenMissingDependencies = 1;
 	};
 };
 class CfgWeapons
