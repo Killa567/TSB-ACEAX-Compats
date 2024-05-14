@@ -10,7 +10,7 @@ class CfgPatches
 		{
 			"aceax_gearinfo"
 		};
-		author="AUTHOR";
+		author="SGTdanny";
 		version="0.1.0.0";
 		versionStr="0.1.0.0";
 		versionAr[]={0,1,0,0};
@@ -21,20 +21,126 @@ class XtdGearModels
 {
 	class CfgWeapons
 	{
-		class USP_ACC_GPNVG18
+		class USP_PVS14
 		{
+			label="[USP] L3 PVS-14";
+			author="SGTdanny";
 			options[]=
 			{
-				"camo"
+				"NVGColour",
+				"LensCover"
 			};
-			label="[USP] L3 GPNVG-18";
-			class camo
+			class NVGColour
 			{
+				label="NVG Colour";
+				alwaysSelectable=1;
+				values[]=
+				{
+					"GP",
+					"WP"
+				};
+			};
+			class LensCover
+			{
+				label="Lens Cover"
+				alwaysSelectable=1;
+				values[]=
+				{
+					"No",
+					"Yes"
+				};
+			};
+		};
+		class USP_PVS15
+		{
+			label="[USP] L3 PVS-15";
+			author="SGTdanny";
+			options[]=
+			{
+				"NVGColour",
+				"LensCover"
+			};
+			class NVGColour
+			{
+				label="NVG Colour";
+				alwaysSelectable=1;
+				values[]=
+				{
+					"GP",
+					"WP"
+				};
+			};
+			class LensCover
+			{
+				label="Lens Cover"
+				alwaysSelectable=1;
+				values[]=
+				{
+					"No",
+					"Yes"
+				};
+			};
+		};
+		class USP_ACC_GPNVG18
+		{
+			label="[USP] L3 GPNVG-18";
+			author="SGTdanny";
+			options[]=
+			{
+				"Colour",
+				"NVGColour",
+				"MountColour",
+				"Position",
+				"LensCover"
+			};
+			class Colour
+			{
+				label="Colour";
 				alwaysSelectable=1;
 				values[]=
 				{
 					"BLK",
 					"TAN"
+				};
+			};
+			class NVGColour
+			{
+				label="NVG Colour";
+				alwaysSelectable=1;
+				values[]=
+				{
+					"GP",
+					"WP"
+				};
+			};
+			class MountColour
+			{
+				label="Mout Colour";
+				alwaysSelectable=0;
+				values[]=
+				{
+					"BLK",
+					"TAN"
+				};
+			};
+			class Position
+			{
+				label="Position";
+				alwaysSelectable=1;
+				values[]=
+				{
+					"1",
+					"2"
+				};
+			};
+			class LensCover
+			{
+				label="Lens Cover";
+				alwaysSelectable=1;
+				values[]=
+				{
+					"No",
+					"Yes"
 				};
 			};
 		};
@@ -111,15 +217,274 @@ class XtdGearInfos
 {
 	class CfgWeapons
 	{
-		class USP_ACC_GPNVG18
+////////////////////////////////////////14
+		class USP_PVS14
 		{
-			model="USP_ACC_GPNVG18";
-			camo="BLK";
+			model="USP_PVS14";
+			NVGColour="GP";
+			LensCover="No";
 		};
-		class USP_ACC_GPNVG18_TAN
+		class USP_PVS14_WP
+		{
+			model="USP_PVS14";
+			NVGColour="WP";
+			LensCover="No";
+		};
+		class USP_PVS14_TAR
+		{
+			model="USP_PVS14";
+			NVGColour="GP";
+			LensCover="Yes";
+		};
+		class USP_PVS14_WP_TAR
+		{
+			model="USP_PVS14";
+			NVGColour="WP";
+			LensCover="Yes";
+		};
+////////////////////////////////////////15
+		class USP_PVS15
+		{
+			model="USP_PVS15";
+			NVGColour="GP";
+			LensCover="No";
+		};
+		class USP_PVS15_WP
+		{
+			model="USP_PVS15";
+			NVGColour="WP";
+			LensCover="No";
+		};
+		class USP_PVS15_TAR
+		{
+			model="USP_PVS15";
+			NVGColour="GP";
+			LensCover="Yes";
+		};
+		class USP_PVS15_WP_TAR
+		{
+			model="USP_PVS15";
+			NVGColour="WP";
+			LensCover="Yes";
+		};
+////////////////////////////////////////18
+		class USP_GPNVG18_BLK
 		{
 			model="USP_ACC_GPNVG18";
-			camo="TAN";
+			Colour="BLK";
+			NVGColour="GP";
+			MountColour="BLK";
+			Position="1";
+			LensCover="No";
+		};
+		class USP_GPNVG18_BLK2
+		{
+			model="USP_ACC_GPNVG18";
+			Colour="BLK";
+			NVGColour="GP";
+			MountColour="TAN";
+			Position="1";
+			LensCover="No";
+		};
+		class USP_GPNVG18_TAN
+		{
+			model="USP_ACC_GPNVG18";
+			Colour="TAN";
+			NVGColour="GP";
+			MountColour="BLK";
+			Position="1";
+			LensCover="No";
+		};
+		class USP_GPNVG18_TAN2
+		{
+			model="USP_ACC_GPNVG18";
+			Colour="TAN";
+			NVGColour="GP";
+			MountColour="TAN";
+			Position="1";
+			LensCover="No";
+		};
+		class USP_GPNVG18_WP_BLK
+		{
+			model="USP_ACC_GPNVG18";
+			Colour="BLK";
+			NVGColour="WP";
+			MountColour="BLK";
+			Position="1";
+			LensCover="No";
+		};
+		class USP_GPNVG18_WP_BLK2
+		{
+			model="USP_ACC_GPNVG18";
+			Colour="BLK";
+			NVGColour="WP";
+			MountColour="TAN";
+			Position="1";
+			LensCover="No";
+		};
+		class USP_GPNVG18_WP_TAN
+		{
+			model="USP_ACC_GPNVG18";
+			Colour="TAN";
+			NVGColour="WP";
+			MountColour="BLK";
+			Position="1";
+			LensCover="No";
+		};
+		class USP_GPNVG18_WP_TAN2
+		{
+			model="USP_ACC_GPNVG18";
+			Colour="TAN";
+			NVGColour="WP";
+			MountColour="TAN";
+			Position="1";
+			LensCover="No";
+		};
+////////////////////////////////////////18GM
+		class USP_GPNVG18_GM_BLK
+		{
+			model="USP_ACC_GPNVG18";
+			Colour="BLK";
+			NVGColour="GP";
+			MountColour="BLK";
+			Position="2";
+			LensCover="No";
+		};
+		class USP_GPNVG18_GM_TAN
+		{
+			model="USP_ACC_GPNVG18";
+			Colour="TAN";
+			NVGColour="GP";
+			MountColour="TAN";
+			Position="2";
+			LensCover="No";
+		};
+		class USP_GPNVG18_WP_GM_BLK
+		{
+			model="USP_ACC_GPNVG18";
+			Colour="BLK";
+			NVGColour="WP";
+			MountColour="BLK";
+			Position="2";
+			LensCover="No";
+		};
+		class USP_GPNVG18_WP_GM_TAN
+		{
+			model="USP_ACC_GPNVG18";
+			Colour="TAN";
+			NVGColour="WP";
+			MountColour="TAN";
+			Position="2";
+			LensCover="No";
+		};
+		class USP_GPNVG18_GM_TAR_BLK
+		{
+			model="USP_ACC_GPNVG18";
+			Colour="BLK";
+			NVGColour="GP";
+			MountColour="BLK";
+			Position="2";
+			LensCover="Yes";
+		};
+		class USP_GPNVG18_GM_TAR_TAN
+		{
+			model="USP_ACC_GPNVG18";
+			Colour="TAN";
+			NVGColour="GP";
+			MountColour="TAN";
+			Position="2";
+			LensCover="Yes";
+		};
+		class USP_GPNVG18_WP_GM_TAR_BLK
+		{
+			model="USP_ACC_GPNVG18";
+			Colour="BLK";
+			NVGColour="WP";
+			MountColour="BLK";
+			Position="2";
+			LensCover="Yes";
+		};
+		class USP_GPNVG18_WP_GM_TAR_TAN
+		{
+			model="USP_ACC_GPNVG18";
+			Colour="TAN";
+			NVGColour="WP";
+			MountColour="TAN";
+			Position="2";
+			LensCover="Yes";
+		};
+////////////////////////////////////////18TAR
+		class USP_GPNVG18_TAR_BLK
+		{
+			model="USP_ACC_GPNVG18";
+			Colour="BLK";
+			NVGColour="GP";
+			MountColour="BLK";
+			Position="1";
+			LensCover="Yes";
+		};
+		class USP_GPNVG18_TAR_BLK2
+		{
+			model="USP_ACC_GPNVG18";
+			Colour="BLK";
+			NVGColour="GP";
+			MountColour="TAN";
+			Position="1";
+			LensCover="Yes";
+		};
+		class USP_GPNVG18_TAR_TAN
+		{
+			model="USP_ACC_GPNVG18";
+			Colour="TAN";
+			NVGColour="GP";
+			MountColour="BLK";
+			Position="1";
+			LensCover="Yes";
+		};
+		class USP_GPNVG18_TAR_TAN2
+		{
+			model="USP_ACC_GPNVG18";
+			Colour="TAN";
+			NVGColour="GP";
+			MountColour="TAN";
+			Position="1";
+			LensCover="Yes";
+		};
+		class USP_GPNVG18_WP_TAR_BLK
+		{
+			model="USP_ACC_GPNVG18";
+			Colour="BLK";
+			NVGColour="WP";
+			MountColour="BLK";
+			Position="1";
+			LensCover="Yes";
+		};
+		class USP_GPNVG18_WP_TAR_BLK2
+		{
+			model="USP_ACC_GPNVG18";
+			Colour="BLK";
+			NVGColour="WP";
+			MountColour="TAN";
+			Position="1";
+			LensCover="Yes";
+		};
+		class USP_GPNVG18_WP_TAR_TAN
+		{
+			model="USP_ACC_GPNVG18";
+			Colour="TAN";
+			NVGColour="WP";
+			MountColour="BLK";
+			Position="1";
+			LensCover="Yes";
+		};
+		class USP_GPNVG18_WP_TAR_TAN2
+		{
+			model="USP_ACC_GPNVG18";
+			Colour="TAN";
+			NVGColour="WP";
+			MountColour="TAN";
+			Position="1";
+			LensCover="Yes";
 		};
 ////////////////////////////////////////31 
 		class USP_PVS31
