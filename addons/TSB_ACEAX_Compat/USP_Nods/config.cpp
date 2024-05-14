@@ -1,8 +1,8 @@
 class CfgPatches
 {
-	class aceax_compat_usp
+	class TSB_ACEAX_Compat_USP
 	{
-		name="compat_usp";
+		name="TSB_ACEAX_Compat_USP";
 		units[]={};
 		weapons[]={};
 		requiredVersion=1.88;
