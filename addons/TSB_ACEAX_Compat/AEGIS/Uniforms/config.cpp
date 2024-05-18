@@ -18,5 +18,6 @@ class CfgPatches
 			"A3_Aegis_Data_F_Aegis"
 		};
 		author="Frost99";
+		skipWhenMissingDependencies = 1;
 	};
 };

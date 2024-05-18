@@ -7,15 +7,14 @@
 
 class CfgPatches
 {
-	class TSB_ACEAX_Compat_AEGIS_VESTS
+	class TSB_ACEAX_Compat_3CBFACTIONS_HELMETS
 	{
-		name="TSB_ACEAX_Compat_AEGIS_VESTS";
+		name="TSB_ACEAX_Compat_3CBFACTIONS_HELMETS";
 		units[]={};
 		weapons[]={};
 		requiredAddons[]=
 		{
-			"aceax_gearinfo",
-			"A3_Aegis_Data_F_Aegis"
+			"aceax_gearinfo"
 		};
 		author="Frost99";
 		skipWhenMissingDependencies = 1;
