@@ -1,13 +1,14 @@
 class CfgPatches
 {
-	class aceax_compat_tfl_g3
+	class TSB_ACEAX_Compat_tfl_g3
 	{
-		name="compat_tfl_g3";
+		name="TSB_ACEAX_Compat_tfl_g3";
 		units[]={};
 		weapons[]={};
 		requiredVersion=1.88;
 		requiredAddons[]=
 		{
+			"aceax_gearinfo",
 			"tfl_g3"
 		};
 		author="TSB";

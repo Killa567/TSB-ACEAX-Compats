@@ -7,7 +7,8 @@ class CfgPatches
         weapons[]={};
         requiredAddons[]=
         {
-            "aceax_gearinfo"
+            "aceax_gearinfo",
+            "characters_f_vietnam"
         };
         author="SGTdanny";
         skipWhenMissingDependencies = 1;

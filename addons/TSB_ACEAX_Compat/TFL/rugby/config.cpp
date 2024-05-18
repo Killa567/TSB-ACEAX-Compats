@@ -1,13 +1,14 @@
 class CfgPatches
 {
-	class aceax_compat_tfl_rugby
+	class TSB_ACEAX_Compat_tfl_rugby
 	{
-		name="compat_tfl_rugby";
+		name="TSB_ACEAX_Compat_tfl_rugby";
 		units[]={};
 		weapons[]={};
 		requiredVersion=1.88;
 		requiredAddons[]=
 		{
+			"aceax_gearinfo",
 			"TFL_rugby"
 		};
 		author="wanoO";

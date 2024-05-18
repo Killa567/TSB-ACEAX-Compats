@@ -1,13 +1,14 @@
 class CfgPatches
 {
-	class aceax_compat_tfl_pcu
+	class TSB_ACEAX_Compat_tfl_pcu
 	{
-		name="compat_tfl_pcu";
+		name="TSB_ACEAX_Compat_tfl_pcu";
 		units[]={};
 		weapons[]={};
 		requiredVersion=1.88;
 		requiredAddons[]=
 		{
+			"aceax_gearinfo",
 			"tfl_pcu"
 		};
 		author="TSB";

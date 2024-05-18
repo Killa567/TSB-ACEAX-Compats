@@ -1,13 +1,14 @@
 class CfgPatches
 {
-	class aceax_compat_tfl_panel
+	class TSB_ACEAX_Compat_tfl_panel
 	{
-		name="compat_tfl_panel";
+		name="TSB_ACEAX_Compat_tfl_panel";
 		units[]={};
 		weapons[]={};
 		requiredVersion=1.88;
 		requiredAddons[]=
 		{
+			"aceax_gearinfo",
 			"TFL_Panel"
 		};
 		author="TSB";

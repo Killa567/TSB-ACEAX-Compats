@@ -1,13 +1,17 @@
 class CfgPatches
 {
-	class aceax_rhs_compat
+	class TSB_ACEAX_Compat_RHS
 	{
 		units[]={};
 		weapons[]={};
 		requiredVersion="1.0";
 		requiredAddons[]=
 		{
-			"aceax_gearinfo"
+			"aceax_gearinfo",
+			"rhs_main",
+			"rhsusf_main",
+			"rhssaf_main",
+			"rhsgref_main"
 		};
 		author="TSB";
 		skipWhenMissingDependencies = 1;
@@ -3577,25 +3581,6 @@ class XtdGearModels
 				"attachsys"
 			};
 			label="AK-104";
-			class attachsys: rhs_attachsys
-			{
-				values[]=
-				{
-					"warsaw",
-					"picatinny",
-					"zenit",
-					"zenit_pica"
-				};
-				alwaysSelectable=1;
-			};
-		};
-		class rhs_ak105
-		{
-			options[]=
-			{
-				"attachsys"
-			};
-			label="AK-105";
 			class attachsys: rhs_attachsys
 			{
 				values[]=
@@ -10440,11 +10425,6 @@ class XtdGearInfos
 			model="rhs_belt_equip";
 			loadout="holster";
 		};
-		class rhs_belt_holster
-		{
-			model="rhs_belt_equip";
-			loadout="holster";
-		};
 		class rhs_belt_AK
 		{
 			model="rhs_belt_equip";
@@ -11097,26 +11077,6 @@ class XtdGearInfos
 		class rhs_weap_ak104_zenitco01_b33
 		{
 			model="rhs_ak104";
-			attachsys="zenit_pica";
-		};
-		class rhs_weap_ak105
-		{
-			model="rhs_ak105";
-			attachsys="warsaw";
-		};
-		class rhs_weap_ak105_npz
-		{
-			model="rhs_ak105";
-			attachsys="picatinny";
-		};
-		class rhs_weap_ak105_zenitco01
-		{
-			model="rhs_ak105";
-			attachsys="zenit";
-		};
-		class rhs_weap_ak105_zenitco01_b33
-		{
-			model="rhs_ak105";
 			attachsys="zenit_pica";
 		};
 		class rhs_weap_ak105

@@ -1,13 +1,14 @@
 class CfgPatches
 {
-	class aceax_compat_tfl_cap
+	class TSB_ACEAX_Compat_tfl_cap
 	{
-		name="compat_tfl_cap";
+		name="TSB_ACEAX_Compat_tfl_cap";
 		units[]={};
 		weapons[]={};
 		requiredVersion=1.88;
 		requiredAddons[]=
 		{
+			"aceax_gearinfo",
 			"New_Cap_Who_Dis"
 		};
 		author="TSB";

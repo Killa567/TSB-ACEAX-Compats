@@ -1,13 +1,14 @@
 class CfgPatches
 {
-	class aceax_compat_tfl_cold
+	class TSB_ACEAX_Compat_tfl_cold
 	{
-		name="compat_TFL_cold";
+		name="TSB_ACEAX_Compat_TFL_cold";
 		units[]={};
 		weapons[]={};
 		requiredVersion=1.88;
 		requiredAddons[]=
 		{
+			"aceax_gearinfo",
 			"tfl_cold"
 		};
 		author="TSB";

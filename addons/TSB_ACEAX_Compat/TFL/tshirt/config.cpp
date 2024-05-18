@@ -1,13 +1,14 @@
 class CfgPatches
 {
-	class aceax_bettir_compat_tfl_tshirt
+	class TSB_ACEAX_Compat_tfl_tshirt
 	{
-		name="compat_tfl_tshirt";
+		name="TSB_ACEAX_Compat_tfl_tshirt";
 		units[]={};
 		weapons[]={};
 		requiredVersion=1.88;
 		requiredAddons[]=
 		{
+			"aceax_gearinfo",
 			"tfl_g3_thirt"
 		};
 		author="TSB";

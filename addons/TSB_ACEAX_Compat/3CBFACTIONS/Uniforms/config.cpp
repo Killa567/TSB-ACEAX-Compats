@@ -1,5 +1,4 @@
-
-		skipWhenMissingDependencies = 1;#define true	1
+#define true	1
 #define false	0
 
 #define private		0
@@ -15,9 +14,10 @@ class CfgPatches
 		weapons[]={};
 		requiredAddons[]=
 		{
-			"aceax_gearinfo"
+			"aceax_gearinfo",
+			"UK3CB_Factions_Equipment"
 		};
-		author="Frost99";
+		author="Frost993";
 		skipWhenMissingDependencies = 1;
 	};
 };

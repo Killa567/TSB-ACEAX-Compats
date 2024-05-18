@@ -14,9 +14,10 @@ class CfgPatches
 		weapons[]={};
 		requiredAddons[]=
 		{
-			"aceax_gearinfo"
+			"aceax_gearinfo",
+			"YuE_Vest"
 		};
-		author="Frost99";
+		author="Frost993";
         skipWhenMissingDependencies = 1;
 	};
 };

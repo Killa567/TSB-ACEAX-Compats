@@ -8,7 +8,8 @@ class CfgPatches
 		requiredVersion=1.88;
 		requiredAddons[]=
 		{
-			"aceax_gearinfo"
+			"aceax_gearinfo",
+			"USP_Gear_NVG"
 		};
 		author="SGTdanny";
 		version="0.1.0.0";

@@ -1,13 +1,14 @@
 class CfgPatches
 {
-	class aceax_compat_tfl_sf
+	class TSB_ACEAX_Compat_tfl_sf
 	{
-		name="compat_tfl_sf";
+		name="TSB_ACEAX_Compat_tfl_sf";
 		units[]={};
 		weapons[]={};
 		requiredVersion=1.88;
 		requiredAddons[]=
 		{
+			"aceax_gearinfo",
 			"tfl_sf",
 			"TFL_Headgear_Functions"
 		};

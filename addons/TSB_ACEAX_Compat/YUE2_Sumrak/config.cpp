@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class TSB_Sumrak_ACEAX_Compat
+	class TSB_ACEAX_Compat_Sumrak
 	{
 		name="TSB_ACEAX_Compat_Sumrak";
 		units[]={};
@@ -8,7 +8,8 @@ class CfgPatches
 		requiredVersion=1.88;
 		requiredAddons[]=
 		{
-			"aceax_gearinfo"
+			"aceax_gearinfo",
+			"YuE_EAST_GRU"
 		};
 		author="SGTdanny";
 		version="0.1.0.0";

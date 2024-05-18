@@ -14,7 +14,8 @@ class CfgPatches
 		weapons[]={};
 		requiredAddons[]=
 		{
-			"aceax_gearinfo"
+			"aceax_gearinfo",
+			"VSM_Vests"
 		};
 		author="Killa567";
 		skipWhenMissingDependencies = 1;

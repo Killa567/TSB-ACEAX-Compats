@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class aceax_compat_tfl_m9
+	class TSB_ACEAX_Compat_tfl_m9
 	{
 		magazines[]={};
 		ammo[]={};
@@ -12,6 +12,7 @@ class CfgPatches
 		versionAr[]={0,1,0,0};
 		requiredAddons[]=
 		{
+			"aceax_gearinfo",
 			"A3_Data_F",
 			"A3_Weapons_F",
 			"A3_Characters_F",
