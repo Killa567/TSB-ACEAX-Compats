@@ -2,17 +2,17 @@
 
 Compats for aceax in tsb:
 - 3CBFACTIONS: Not Started
-- ACEBI: Needs a rework to fix names and add contact/apex content
-- AEGIS: Not Started
+- ACEBI: Done
+- AEGIS: WIP
 - DHI: Done
 - GM: Not Started
 - ILBE: Done
-- RF: Not Started
+- RF: WIP
 - RHS: Done?
 - SOG: In progress
 - TFL: Done?
 - USP_Nods: Done?
 - VSM: Done
-- WS: Not Started
+- WS: WIP
 - YUE: Done?
 - YUE2_Sumrak: Done?

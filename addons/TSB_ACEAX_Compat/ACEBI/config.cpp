@@ -10,101 +10,10 @@ class CfgPatches
 			"aceax_gearinfo"
 		};
 		author="TSB";
-		skipWhenMissingDependencies = 1;
 	};
 };
 class XtdGearModels
 {
-	class CamoBase
-	{
-		class SND
-		{
-			label="Sand";
-			image="#(rgb,8,8,3)color(0.886,0.843,0.765,1)";
-		};
-		class SGG
-		{
-			label="Sage";
-			image="#(rgb,8,8,3)color(0.53,0.62,0.51,1)";
-		};
-		class KHKG
-		{
-			label="Khaki G.";
-			description="Khaki Green";
-			image="#(rgb,8,8,3)color(0.6,0.64,0.5,1)";
-		};
-		class HEX
-		{
-			label="Hex";
-			image="z\aceax\addons\gearinfo\data\camo\csat.paa";
-		};
-		class GHEX
-		{
-			label="Grn. Hex";
-			description="Green Hex";
-			image="z\aceax\addons\gearinfo\data\camo\csat_tna.paa";
-		};
-		class UHEX
-		{
-			label="Urb. Hex";
-			description="Urban Hex";
-			image="z\aceax\addons\gearinfo\data\camo\csat_ou.paa";
-		};
-		class BIHELM_STD
-		{
-			label="Standard";
-			image="TSB_ACEAX_Compat\ACEBI\data\camo\bihelm_std.paa";
-		};
-		class BIHELM_DES
-		{
-			label="Desert";
-			image="TSB_ACEAX_Compat\ACEBI\data\camo\bihelm_des.paa";
-		};
-		class BIHELM_GRS
-		{
-			label="Grass";
-			image="TSB_ACEAX_Compat\ACEBI\data\camo\bihelm_grs.paa";
-		};
-		class BIHELM_SNK
-		{
-			label="Snakeskin";
-			image="TSB_ACEAX_Compat\ACEBI\data\camo\bihelm_snk.paa";
-		};
-		class CTRG_ARID
-		{
-			label="Arid Daz.";
-			description="CTRG Arid Dazzle";
-			image="TSB_ACEAX_Compat\ACEBI\data\camo\ctrg_arid.paa";
-		};
-		class CTRG_URB
-		{
-			label="Urb. Daz.";
-			description="CTRG Urban Dazzle";
-			image="TSB_ACEAX_Compat\ACEBI\data\camo\ctrg_urb.paa";
-		};
-		class CTRG_TROP
-		{
-			label="Trop. Daz.";
-			description="CTRG Tropic Dazzle";
-			image="TSB_ACEAX_Compat\ACEBI\data\camo\ctrg_trop.paa";
-		};
-		class BISPNZ_A
-		{
-			label="Arid";
-			image="TSB_ACEAX_Compat\ACEBI\data\camo\bihelm_spnz_a.paa";
-		};
-		class BISPNZ_L
-		{
-			label="Lush";
-			image="TSB_ACEAX_Compat\ACEBI\data\camo\bihelm_spnz_l.paa";
-		};
-		class THEX
-		{
-			label="Tai. Hex";
-			description="Taiga Hex";
-			image="TSB_ACEAX_Compat\ACEBI\data\camo\rus_taiga.paa";
-		};
-	};
 	class CfgGlasses
 	{
 		class acebi_apr_csat
@@ -138,7 +47,14 @@ class XtdGearModels
 				values[]=
 				{
 					"BLK",
-					"OLI"
+					"OLI",
+					"BlueStripes",
+					"Flecktarn",
+					"Halloween",
+					"OrangePattern",
+					"Scarecrow",
+					"Skull",
+					"Tropentarn"
 				};
 				alwaysSelectable=1;
 			};
@@ -169,7 +85,18 @@ class XtdGearModels
 					"Beast",
 					"KHK",
 					"OLI",
-					"TAN"
+					"TAN",
+					"BlueFlames",
+					"BlueFlames2",
+					"CandySkull",
+					"OrangeFlames",
+					"RedFlames",
+					"Skull",
+					"Syndikat",
+					"Skull2",
+					"Vampire",
+					"Syndikat2"
+
 				};
 				alwaysSelectable=1;
 			};
@@ -484,6 +411,23 @@ class XtdGearModels
 				alwaysSelectable=1;
 			};
 		};
+		class acebi_gunbag
+		{
+			options[]=
+			{
+				"camo"
+			};
+			label="Gunbag";
+			class camo
+			{
+				values[]=
+				{
+					"GRN",
+					"TAN"
+				};
+				alwaysSelectable=1;
+			};
+		};
 		class acebi_fieldpack
 		{
 			options[]=
@@ -674,7 +618,7 @@ class XtdGearModels
 			{
 				"faction"
 			};
-			label="Autonomous GMG";
+			label="Dismantled Autonomous GMG";
 			class faction
 			{
 				values[]=
@@ -693,7 +637,7 @@ class XtdGearModels
 			{
 				"faction"
 			};
-			label="Autonomous HMG";
+			label="Dismantled Autonomous HMG";
 			class faction
 			{
 				values[]=
@@ -712,7 +656,7 @@ class XtdGearModels
 			{
 				"faction"
 			};
-			label="M2 HMG";
+			label="Dismantled M2 HMG";
 			class faction
 			{
 				values[]=
@@ -731,7 +675,7 @@ class XtdGearModels
 			{
 				"faction"
 			};
-			label="M2 HMG (Raised)";
+			label="Dismantled M2 HMG (Raised)";
 			class faction
 			{
 				values[]=
@@ -750,7 +694,7 @@ class XtdGearModels
 			{
 				"faction"
 			};
-			label="M2 Tripod";
+			label="Folded Tripod M2 HMG";
 			class faction
 			{
 				values[]=
@@ -771,7 +715,7 @@ class XtdGearModels
 			{
 				"faction"
 			};
-			label="M2 Tripod (Raised)";
+			label="Folded Tripod M2 HMG (Raised)";
 			class faction
 			{
 				values[]=
@@ -792,7 +736,7 @@ class XtdGearModels
 			{
 				"faction"
 			};
-			label="MK30/32 Tripod";
+			label="Folded Tripod";
 			class faction
 			{
 				values[]=
@@ -811,7 +755,7 @@ class XtdGearModels
 			{
 				"faction"
 			};
-			label="MK30/32 Tripod (Raised)";
+			label="Folded Tripod (Raised)";
 			class faction
 			{
 				values[]=
@@ -830,7 +774,7 @@ class XtdGearModels
 			{
 				"faction"
 			};
-			label="Mk30 HMG";
+			label="Dismantled Mk30 HMG";
 			class faction
 			{
 				values[]=
@@ -849,7 +793,7 @@ class XtdGearModels
 			{
 				"faction"
 			};
-			label="Mk30 HMG (Raised)";
+			label="Dismantled Mk30 HMG (Raised)";
 			class faction
 			{
 				values[]=
@@ -868,7 +812,7 @@ class XtdGearModels
 			{
 				"faction"
 			};
-			label="Mk32 GMG";
+			label="Dismantled Mk32 GMG";
 			class faction
 			{
 				values[]=
@@ -887,7 +831,7 @@ class XtdGearModels
 			{
 				"faction"
 			};
-			label="Mk32 GMG (Raised)";
+			label="Dismantled Mk32 GMG (Raised)";
 			class faction
 			{
 				values[]=
@@ -906,7 +850,7 @@ class XtdGearModels
 			{
 				"faction"
 			};
-			label="Mortar Bipod";
+			label="Folded Mk6 Mortar Bipod";
 			class faction
 			{
 				values[]=
@@ -925,7 +869,7 @@ class XtdGearModels
 			{
 				"faction"
 			};
-			label="Mortar Tube";
+			label="Folded Mk6 Mortar Tube";
 			class faction
 			{
 				values[]=
@@ -945,7 +889,7 @@ class XtdGearModels
 				"faction",
 				"camo"
 			};
-			label="Remote Designator";
+			label="Remote Designator Bag";
 			class faction
 			{
 				values[]=
@@ -972,7 +916,7 @@ class XtdGearModels
 			{
 				"faction"
 			};
-			label="Static Titan AA";
+			label="Static Titan Launcher (AA)";
 			class faction
 			{
 				values[]=
@@ -991,7 +935,7 @@ class XtdGearModels
 			{
 				"faction"
 			};
-			label="Static Titan AT";
+			label="Static Titan Launcher (AT)";
 			class faction
 			{
 				values[]=
@@ -1010,7 +954,7 @@ class XtdGearModels
 			{
 				"faction"
 			};
-			label="AL-6";
+			label="UAV Bag (AL-6)";
 			class faction
 			{
 				values[]=
@@ -1029,7 +973,7 @@ class XtdGearModels
 			{
 				"faction"
 			};
-			label="AL-6 (Medical)";
+			label="UAV Bag (AL-6, Medical)";
 			class faction
 			{
 				values[]=
@@ -1049,7 +993,7 @@ class XtdGearModels
 			{
 				"faction"
 			};
-			label="AR-2";
+			label="UAV Bag (AR-2)";
 			class faction
 			{
 				values[]=
@@ -1068,7 +1012,7 @@ class XtdGearModels
 			{
 				"faction"
 			};
-			label="ED-1D";
+			label="UAV Bag (ED-1D)";
 			class faction
 			{
 				values[]=
@@ -1087,7 +1031,7 @@ class XtdGearModels
 			{
 				"faction"
 			};
-			label="ED-1E";
+			label="UAV Bag (ED-1E)";
 			class faction
 			{
 				values[]=
@@ -1110,7 +1054,7 @@ class XtdGearModels
 				"camo",
 				"accessory"
 			};
-			label="Adv. Mod. Helm";
+			label="Advanced Modular Helmet";
 			class camo
 			{
 				values[]=
@@ -1138,7 +1082,7 @@ class XtdGearModels
 			{
 				"camo"
 			};
-			label="Assassin Helm";
+			label="Assassin Helmet";
 			class camo
 			{
 				values[]=
@@ -1156,7 +1100,7 @@ class XtdGearModels
 			{
 				"camo"
 			};
-			label="Avenger Helm";
+			label="Avenger Helmet";
 			class camo
 			{
 				values[]=
@@ -1210,7 +1154,7 @@ class XtdGearModels
 			{
 				"camo"
 			};
-			label="Basic Helm";
+			label="Basic Helmet";
 			class camo
 			{
 				values[]=
@@ -1336,7 +1280,9 @@ class XtdGearModels
 					"UK",
 					"US Black",
 					"US MTP",
-					"White/IDAP"
+					"White/IDAP",
+					"Lyfe",
+					"MaldenTours"
 				};
 				alwaysSelectable=1;
 			};
@@ -1356,7 +1302,7 @@ class XtdGearModels
 			{
 				"camo"
 			};
-			label="Combat Helm";
+			label="Combat Helmet";
 			class camo
 			{
 				values[]=
@@ -1380,7 +1326,7 @@ class XtdGearModels
 				"faction",
 				"camo"
 			};
-			label="Crew Helm";
+			label="Crew Helmet";
 			class faction
 			{
 				values[]=
@@ -1410,7 +1356,7 @@ class XtdGearModels
 			{
 				"faction"
 			};
-			label="Crew Helm (Soft)";
+			label="Crew Helmet (Soft)";
 			class faction
 			{
 				values[]=
@@ -1427,7 +1373,7 @@ class XtdGearModels
 			{
 				"camo"
 			};
-			label="Defender Helm";
+			label="Defender Helmet";
 			class camo
 			{
 				values[]=
@@ -1465,7 +1411,7 @@ class XtdGearModels
 			{
 				"camo"
 			};
-			label="Enhc. Combat Helm";
+			label="Enhanced Combat Helmet";
 			class camo
 			{
 				values[]=
@@ -1579,7 +1525,7 @@ class XtdGearModels
 			{
 				"faction"
 			};
-			label="Heli Crew Helm";
+			label="Heli Crew Helmet";
 			class faction
 			{
 				values[]=
@@ -1598,7 +1544,7 @@ class XtdGearModels
 			{
 				"faction"
 			};
-			label="Heli Pilot Helm";
+			label="Heli Pilot Helmet";
 			class faction
 			{
 				values[]=
@@ -1617,7 +1563,7 @@ class XtdGearModels
 			{
 				"camo"
 			};
-			label="Li. Combat Helm";
+			label="Light Combat Helmet";
 			class camo
 			{
 				values[]=
@@ -1640,7 +1586,7 @@ class XtdGearModels
 			{
 				"camo"
 			};
-			label="Mil. Cap";
+			label="Military Cap";
 			class camo
 			{
 				values[]=
@@ -1686,7 +1632,7 @@ class XtdGearModels
 			{
 				"faction"
 			};
-			label="Pilot Helm";
+			label="Pilot Helmet";
 			class faction
 			{
 				values[]=
@@ -1705,7 +1651,7 @@ class XtdGearModels
 			{
 				"camo"
 			};
-			label="Protector Helm";
+			label="Protector Helmet";
 			class camo
 			{
 				values[]=
@@ -1717,13 +1663,30 @@ class XtdGearModels
 				alwaysSelectable=1;
 			};
 		};
+		class acebi_press_helm
+		{
+			options[]=
+			{
+				"NeckPro"
+			};
+			label="Press Helmet";
+			class NeckPro
+			{
+				values[]=
+				{
+					"Yes",
+					"No"
+				};
+				alwaysSelectable=1;
+			};
+		};
 		class acebi_racing_helmet
 		{
 			options[]=
 			{
 				"camo"
 			};
-			label="Racing Helm";
+			label="Racing Helmet";
 			class camo
 			{
 				values[]=
@@ -1794,7 +1757,7 @@ class XtdGearModels
 			{
 				"camo"
 			};
-			label="Stlh. Combat Helm";
+			label="Steath Combat Helmet";
 			class camo
 			{
 				values[]=
@@ -1828,7 +1791,7 @@ class XtdGearModels
 			{
 				"camo"
 			};
-			label="SpcPrp Helm";
+			label="Special Purpose Helmet";
 			class camo
 			{
 				values[]=
@@ -1904,10 +1867,6 @@ class XtdGearModels
 					"WalRob"
 				};
 				alwaysSelectable=1;
-				class WalRob
-				{
-					label="""Walt. Robo.""" \n "description = ""Waltham Robotics""";
-				};
 			};
 		};
 		class acebi_common_clothes
@@ -1937,7 +1896,7 @@ class XtdGearModels
 			{
 				"camo"
 			};
-			label="Constr. Coverall";
+			label="Construction Coverall";
 			class camo
 			{
 				values[]=
@@ -1958,7 +1917,7 @@ class XtdGearModels
 				"top",
 				"sleeves"
 			};
-			label="CTRG Cmb. Unif.";
+			label="CTRG Combat Uniform";
 			class camo
 			{
 				values[]=
@@ -1996,7 +1955,7 @@ class XtdGearModels
 				"top",
 				"sleeves"
 			};
-			label="CTRG Stlh. Unif.";
+			label="CTRG Stealth Uniform";
 			class camo
 			{
 				values[]=
@@ -2180,7 +2139,7 @@ class XtdGearModels
 				"camo",
 				"undershirt"
 			};
-			label="Fatigues [AAF]";
+			label="Formal Suit";
 			class camo
 			{
 				values[]=
@@ -2324,7 +2283,7 @@ class XtdGearModels
 			{
 				"faction"
 			};
-			label="Heli Pilot Cover.";
+			label="Heli Pilot Coveralls";
 			class faction
 			{
 				values[]=
@@ -2363,7 +2322,7 @@ class XtdGearModels
 			{
 				"camo"
 			};
-			label="Officer Fatig. [CSAT]";
+			label="Officer Fatigues [CSAT]";
 			class camo
 			{
 				values[]=
@@ -2410,7 +2369,7 @@ class XtdGearModels
 			{
 				"variant"
 			};
-			label="Paramil. Garb";
+			label="Paramilitary Garb";
 			class variant
 			{
 				labe="Variant";
@@ -2449,7 +2408,7 @@ class XtdGearModels
 			{
 				"camo"
 			};
-			label="Sci. Outfit (For.)";
+			label="Scientist Outfit (Formal)";
 			class camo
 			{
 				values[]=
@@ -2466,7 +2425,7 @@ class XtdGearModels
 			{
 				"camo"
 			};
-			label="Sci. Outfit (Infor.)";
+			label="Scientist Outfit (Informal)";
 			class camo
 			{
 				values[]=
@@ -2483,7 +2442,7 @@ class XtdGearModels
 			{
 				"camo"
 			};
-			label="Sports Clothes";
+			label="Sport Clothes";
 			class camo
 			{
 				values[]=
@@ -2519,7 +2478,7 @@ class XtdGearModels
 			{
 				"camo"
 			};
-			label="SpcPrp Suit";
+			label="Special Purpose Suit";
 			class camo
 			{
 				values[]=
@@ -2578,7 +2537,7 @@ class XtdGearModels
 			{
 				"camo"
 			};
-			label="Carrier Rig GL";
+			label="Carrier GL Rig";
 			class camo
 			{
 				values[]=
@@ -2805,7 +2764,7 @@ class XtdGearModels
 			{
 				"camo"
 			};
-			label="LBV Grenadier Harnesss";
+			label="LBV Grenadier Harness";
 			class camo
 			{
 				values[]=
@@ -2875,7 +2834,7 @@ class XtdGearModels
 			{
 				"camo"
 			};
-			label="Modular Carrier Lite";
+			label="Modular Carrier Vest";
 			class camo
 			{
 				values[]=
@@ -3728,7 +3687,7 @@ class XtdGearModels
 			{
 				"camo"
 			};
-			label="FNK-45 Tactical";
+			label="FNX-45 Tactical";
 			class camo
 			{
 				values[]=
@@ -3823,7 +3782,9 @@ class XtdGearModels
 				{
 					"HEX",
 					"GHEX",
-					"GRN"
+					"GRN",
+					"CAMO",
+					"SND"
 				};
 				alwaysSelectable=1;
 			};
@@ -3834,7 +3795,7 @@ class XtdGearModels
 			{
 				"camo"
 			};
-			label="Titan MRPL";
+			label="Titan MPRL";
 			class camo
 			{
 				values[]=
@@ -3856,7 +3817,7 @@ class XtdGearModels
 			{
 				"camo"
 			};
-			label="Titan MRPL Compact";
+			label="Titan MPRL Compact";
 			class camo
 			{
 				values[]=
@@ -3913,7 +3874,7 @@ class XtdGearModels
 			{
 				"camo"
 			};
-			label="NVG (Gen1)";
+			label="NV Goggles (Gen1)";
 			class camo
 			{
 				values[]=
@@ -3931,7 +3892,7 @@ class XtdGearModels
 			{
 				"camo"
 			};
-			label="NVG (Gen2)";
+			label="NV Goggles (Gen2)";
 			class camo
 			{
 				values[]=
@@ -3947,16 +3908,27 @@ class XtdGearModels
 		{
 			options[]=
 			{
-				"camo"
+				"camo",
+				"wp"
 			};
-			label="NVG (Gen3)";
+			label="NV Goggles (Gen3)";
 			class camo
 			{
 				values[]=
 				{
 					"BLK",
 					"SND",
-					"OLI"
+					"OLI",
+					"Tropic"
+				};
+				alwaysSelectable=1;
+			};
+			class wp
+			{
+				values[]=
+				{
+					"Yes",
+					"No"
 				};
 				alwaysSelectable=1;
 			};
@@ -3965,9 +3937,10 @@ class XtdGearModels
 		{
 			options[]=
 			{
-				"camo"
+				"camo",
+				"wp"
 			};
-			label="NVG (Gen4)";
+			label="NV Goggles (Gen4)";
 			class camo
 			{
 				values[]=
@@ -3978,14 +3951,24 @@ class XtdGearModels
 				};
 				alwaysSelectable=1;
 			};
+			class wp
+			{
+				values[]=
+				{
+					"Yes",
+					"No"
+				};
+				alwaysSelectable=1;
+			};
 		};
 		class acebi_nvg_wide
 		{
 			options[]=
 			{
-				"camo"
+				"camo",
+				"wp"
 			};
-			label="NVG (Wide)";
+			label="NV Goggles (Wide)";
 			class camo
 			{
 				values[]=
@@ -3993,6 +3976,15 @@ class XtdGearModels
 					"BLK",
 					"SND",
 					"OLI"
+				};
+				alwaysSelectable=1;
+			};
+			class wp
+			{
+				values[]=
+				{
+					"Yes",
+					"No"
 				};
 				alwaysSelectable=1;
 			};
@@ -4003,7 +3995,7 @@ class XtdGearModels
 			{
 				"camo"
 			};
-			label="Las. Desig.";
+			label="Laser Designator";
 			class camo
 			{
 				values[]=
@@ -4062,6 +4054,48 @@ class XtdGearInfos
 			camo="OLI";
 			goggles="None";
 		};
+		class G_Balaclava_BlueStrips
+		{
+			model="acebi_balaclava";
+			camo="BlueStripes";
+			goggles="None";
+		};
+		class G_Balaclava_Flecktarn
+		{
+			model="acebi_balaclava";
+			camo="Flecktarn";
+			goggles="None";
+		};
+		class G_Balaclava_Halloween_01
+		{
+			model="acebi_balaclava";
+			camo="Halloween";
+			goggles="None";
+		};
+		class G_Balaclava_Flames1
+		{
+			model="acebi_balaclava";
+			camo="OrangePattern";
+			goggles="None";
+		};
+		class G_Balaclava_Scarecrow_01
+		{
+			model="acebi_balaclava";
+			camo="Scarecrow";
+			goggles="None";
+		};
+		class G_Balaclava_Skull1
+		{
+			model="acebi_balaclava";
+			camo="Skull";
+			goggles="None";
+		};
+		class G_Balaclava_Tropentarn
+		{
+			model="acebi_balaclava";
+			camo="Tropentarn";
+			goggles="None";
+		};
 		class G_Bandanna_aviator
 		{
 			model="acebi_bandana_face";
@@ -4108,6 +4142,66 @@ class XtdGearInfos
 		{
 			model="acebi_bandana_face";
 			camo="TAN";
+			glasses="None";
+		};
+		class G_Bandanna_BlueFlame1
+		{
+			model="acebi_bandana_face";
+			camo="BlueFlames";
+			glasses="None";
+		};
+		class G_Bandanna_BlueFlame2
+		{
+			model="acebi_bandana_face";
+			camo="BlueFlames2";
+			glasses="None";
+		};
+		class G_Bandanna_CandySkull
+		{
+			model="acebi_bandana_face";
+			camo="CandySkull";
+			glasses="None";
+		};
+		class G_Bandanna_OrangeFlame1
+		{
+			model="acebi_bandana_face";
+			camo="OrangeFlames";
+			glasses="None";
+		};
+		class G_Bandanna_RedFlame1
+		{
+			model="acebi_bandana_face";
+			camo="RedFlames";
+			glasses="None";
+		};
+		class G_Bandanna_Skull1
+		{
+			model="acebi_bandana_face";
+			camo="Skull";
+			glasses="None";
+		};
+		class G_Bandanna_Syndikat1
+		{
+			model="acebi_bandana_face";
+			camo="Syndikat";
+			glasses="None";
+		};
+		class G_Bandanna_Skull2
+		{
+			model="acebi_bandana_face";
+			camo="Skull2";
+			glasses="None";
+		};
+		class G_Bandanna_Vampire_01
+		{
+			model="acebi_bandana_face";
+			camo="Vampire";
+			glasses="None";
+		};
+		class G_Bandanna_Syndikat2
+		{
+			model="acebi_bandana_face";
+			camo="Syndikat2";
 			glasses="None";
 		};
 		class G_Blindfold_01_black_F
@@ -4416,6 +4510,16 @@ class XtdGearInfos
 		{
 			model="acebi_carryall";
 			camo="M81";
+		};
+		class ace_gunbag
+		{
+			model="acebi_gunbag";
+			camo="GRN";
+		};
+		class ace_gunbag_Tan
+		{
+			model="acebi_gunbag";
+			camo="TAN";
 		};
 		class B_CivilianBackpack_01_Everyday_Astra_F
 		{
@@ -5536,6 +5640,18 @@ class XtdGearInfos
 			camo="HEX";
 			headset="No";
 		};
+		class H_Cap_Lyfe
+		{
+			model="acebi_cap";
+			camo="Lyfe";
+			headset="No";
+		};
+		class H_Cap_MaldenTours
+		{
+			model="acebi_cap";
+			camo="MaldenTours";
+			headset="No";
+		};
 		class H_HelmetB
 		{
 			model="acebi_combat_helm";
@@ -6068,6 +6184,16 @@ class XtdGearInfos
 		{
 			model="acebi_protector_helm";
 			camo="UHEX";
+		};
+		class H_PASGT_basic_blue_press_F
+		{
+			model="acebi_press_helm";
+			NeckPro="No";
+		};
+		class H_PASGT_neckprot_blue_press_F
+		{
+			model="acebi_press_helm";
+			NeckPro="Yes";
 		};
 		class H_RacingHelmet_1_black_F
 		{
@@ -8102,6 +8228,11 @@ class XtdGearInfos
 			model="acebi_rpg32";
 			camo="GRN";
 		};
+		class launch_RPG32_camo_F
+		{
+			model="acebi_rpg32";
+			camo="CAMO";
+		};
 		class launch_I_Titan_F
 		{
 			model="acebi_titan_aa";
@@ -8231,46 +8362,115 @@ class XtdGearInfos
 		{
 			model="acebi_nvg_gen3";
 			camo="BLK";
+			wp="No";
 		};
 		class NVGoggles
 		{
 			model="acebi_nvg_gen3";
 			camo="SND";
+			wp="No";
 		};
 		class NVGoggles_INDEP
 		{
 			model="acebi_nvg_gen3";
 			camo="OLI";
+			wp="No";
+		};
+		class NVGoggles_tna_F
+		{
+			model="acebi_nvg_gen3";
+			camo="Tropic";
+			wp="No";
+		};
+		class ACE_NVGoggles_OPFOR_WP
+		{
+			model="acebi_nvg_gen3";
+			camo="BLK";
+			wp="Yes";
+		};
+		class ACE_NVGoggles_WP
+		{
+			model="acebi_nvg_gen3";
+			camo="SND";
+			wp="Yes";
+		};
+		class ACE_NVGoggles_INDEP_WP
+		{
+			model="acebi_nvg_gen3";
+			camo="OLI";
+			wp="Yes";
 		};
 		class ACE_NVG_Gen4_Black
 		{
 			model="acebi_nvg_gen4";
 			camo="BLK";
+			wp="No";
 		};
 		class ACE_NVG_Gen4
 		{
 			model="acebi_nvg_gen4";
 			camo="SND";
+			wp="No";
 		};
 		class ACE_NVG_Gen4_Green
 		{
 			model="acebi_nvg_gen4";
 			camo="OLI";
+			wp="No";
+		};
+		class ACE_NVG_Gen4_Black_WP
+		{
+			model="acebi_nvg_gen4";
+			camo="BLK";
+			wp="Yes";
+		};
+		class ACE_NVG_Gen4_WP
+		{
+			model="acebi_nvg_gen4";
+			camo="SND";
+			wp="Yes";
+		};
+		class ACE_NVG_Gen4_Green_WP
+		{
+			model="acebi_nvg_gen4";
+			camo="OLI";
+			wp="Yes";
 		};
 		class ACE_NVG_Wide_Black
 		{
 			model="acebi_nvg_wide";
 			camo="BLK";
+			wp="No";
 		};
 		class ACE_NVG_Wide
 		{
 			model="acebi_nvg_wide";
 			camo="SND";
+			wp="No";
 		};
 		class ACE_NVG_Wide_Green
 		{
 			model="acebi_nvg_wide";
 			camo="OLI";
+			wp="No";
+		};
+		class ACE_NVG_Wide_Black_WP
+		{
+			model="acebi_nvg_wide";
+			camo="BLK";
+			wp="Yes";
+		};
+		class ACE_NVG_Wide_WP
+		{
+			model="acebi_nvg_wide";
+			camo="SND";
+			wp="Yes";
+		};
+		class ACE_NVG_Wide_Green_WP
+		{
+			model="acebi_nvg_wide";
+			camo="OLI";
+			wp="Yes";
 		};
 		class Laserdesignator_02_ghex_F
 		{
