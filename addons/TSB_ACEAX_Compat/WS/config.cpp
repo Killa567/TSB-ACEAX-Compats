@@ -273,6 +273,122 @@ class XtdGearModels
 				alwaysSelectable=1;
 			};
 		};
+		class lxWS_banditrags
+		{
+			options[]=
+			{
+				"camo"
+			};
+			label="Bandit Rags";
+			class camo
+			{
+				values[]=
+				{
+					"BRN",
+					"GRY",
+					"GRN",
+					"SND"
+				};
+				alwaysSelectable=1;
+			};
+		};
+		class lxWS_ccdjellaba
+		{
+			options[]=
+			{
+				"camo"
+			};
+			label="Commoner Clothes (Djellaba)";
+			class camo
+			{
+				values[]=
+				{
+					"BLK",
+					"BLKSimple",
+					"BLU",
+					"BLUSimple",
+					"GRN",
+					"WHT",
+					"Wine",
+					"YLW"
+				};
+				alwaysSelectable=1;
+			};
+		};
+		class lxWS_ccnomad
+		{
+			options[]=
+			{
+				"camo"
+			};
+			label="Commoner Clothes (Nomad)";
+			class camo
+			{
+				values[]=
+				{
+					"BLU",
+					"BRN",
+					"WHT"
+				};
+				alwaysSelectable=1;
+			};
+		};
+		class lxWS_ccvillager
+		{
+			options[]=
+			{
+				"camo"
+			};
+			label="Commoner Clothes (Villager)";
+			class camo
+			{
+				values[]=
+				{
+					"BLU",
+					"DRK",
+					"GRN"
+				};
+				alwaysSelectable=1;
+			};
+		};
+		class lxWS_ccjacket
+		{
+			options[]=
+			{
+				"camo"
+			};
+			label="Commoner Clothes (Jacket)";
+			class camo
+			{
+				values[]=
+				{
+					"BLK",
+					"GRY",
+					"GRN"
+				};
+				alwaysSelectable=1;
+			};
+		};
+		class lxWS_ion
+		{
+			options[]=
+			{
+				"camo"
+			};
+			label="Contractor Outfit";
+			class camo
+			{
+				values[]=
+				{
+					"BLK",
+					"CAMO",
+					"Peace",
+					"RED",
+					"WHT"
+				};
+				alwaysSelectable=1;
+			};
+		};
 	};
 	class CfgGlasses
 	{
@@ -610,6 +726,190 @@ class XtdGearInfos
 		{
 			model="acebi_ravenvest";
 			camo="OLI";
+		};
+		class U_lxWS_Djella_02_Brown
+		{
+			model="lxWS_banditrags";
+			camo="BRN";
+		};
+		class U_lxWS_Djella_02_Grey
+		{
+			model="lxWS_banditrags";
+			camo="GRY";
+		};
+		class U_lxWS_Djella_03_Green
+		{
+			model="lxWS_banditrags";
+			camo="GRN";
+		};
+		class U_lxWS_Djella_02_Sand
+		{
+			model="lxWS_banditrags";
+			camo="SND";
+		};
+		class U_lxWS_B_CombatUniform_desert
+		{
+			model="acebi_fatigues_nato";
+			camo="DES";
+			top="Standard";
+		};
+		class U_lxWS_B_CombatUniform_desert_tshirt
+		{
+			model="acebi_fatigues_nato";
+			camo="DES";
+			top="Tee";
+		};
+		class U_lxWS_B_CombatUniform_desert_vest
+		{
+			model="acebi_fatigues_nato";
+			camo="DES";
+			top="Rolled";
+		};
+		class U_lxWS_UN_Camo2
+		{
+			model="acebi_fatigues_aaf";
+			camo="UNA";
+			top="Standard";
+		};
+		class U_lxWS_UN_Camo1
+		{
+			model="acebi_fatigues_aaf";
+			camo="UNA";
+			top="Officer";
+		};
+		class U_lxWS_UN_Camo3
+		{
+			model="acebi_fatigues_aaf";
+			camo="UNA";
+			top="Rolled";
+		};
+		class U_lxWS_SFIA_soldier_2_O
+		{
+			model="acebi_fatigues_ldf";
+			camo="SFIA";
+			top="Standard";
+		};
+		class U_lxWS_SFIA_Officer_1_O
+		{
+			model="acebi_fatigues_ldf";
+			camo="SFIA";
+			top="Officer";
+		};
+		class U_lxWS_SFIA_soldier_1_O
+		{
+			model="acebi_fatigues_ldf";
+			camo="SFIA";
+			top="Rolled";
+		};
+		class U_lxWS_C_Djella_03
+		{
+			model="lxWS_ccdjellaba";
+			camo="BLK";
+		};
+		class U_lxWS_C_Djella_06
+		{
+			model="lxWS_ccdjellaba";
+			camo="BLKSimple";
+		};
+		class U_lxWS_C_Djella_02
+		{
+			model="lxWS_ccdjellaba";
+			camo="BLU";
+		};
+		class U_lxWS_C_Djella_02a
+		{
+			model="lxWS_ccdjellaba";
+			camo="BLUSimple";
+		};
+		class U_lxWS_C_Djella_07
+		{
+			model="lxWS_ccdjellaba";
+			camo="GRN";
+		};
+		class U_lxWS_C_Djella_05
+		{
+			model="lxWS_ccdjellaba";
+			camo="WHT";
+		};
+		class U_lxWS_C_Djella_04
+		{
+			model="lxWS_ccdjellaba";
+			camo="Wine";
+		};
+		class U_lxWS_C_Djella_01
+		{
+			model="lxWS_ccdjellaba";
+			camo="YLW";
+		};
+		class U_lxWS_Tak_02_B
+		{
+			model="lxWS_ccjacket";
+			camo="BLK";
+		};
+		class U_lxWS_Tak_02_C
+		{
+			model="lxWS_ccjacket";
+			camo="GRY";
+		};
+		class U_lxWS_Tak_02_A
+		{
+			model="lxWS_ccjacket";
+			camo="GRN";
+		};
+		class U_lxWS_Tak_03_B
+		{
+			model="lxWS_ccnomad";
+			camo="BLU";
+		};
+		class U_lxWS_Tak_03_A
+		{
+			model="lxWS_ccnomad";
+			camo="BRN";
+		};
+		class U_lxWS_Tak_03_C
+		{
+			model="lxWS_ccnomad";
+			camo="WHT";
+		};
+		class U_lxWS_Tak_01_C
+		{
+			model="lxWS_ccvillager";
+			camo="BLU";
+		};
+		class U_lxWS_Tak_01_B
+		{
+			model="lxWS_ccvillager";
+			camo="DRK";
+		};
+		class U_lxWS_Tak_01_A
+		{
+			model="lxWS_ccvillager";
+			camo="GRN";
+		};
+		class U_lxWS_ION_Casual3
+		{
+			model="lxWS_ion";
+			camo="BLK";
+		};
+		class U_lxWS_ION_Casual6
+		{
+			model="lxWS_ion";
+			camo="CAMO";
+		};
+		class U_lxWS_ION_Casual5
+		{
+			model="lxWS_ion";
+			camo="Peace";
+		};
+		class U_lxWS_ION_Casual2
+		{
+			model="lxWS_ion";
+			camo="RED";
+		};
+		class U_lxWS_ION_Casual4
+		{
+			model="lxWS_ion";
+			camo="WHT";
 		};
 	};
 	class CfgGlasses

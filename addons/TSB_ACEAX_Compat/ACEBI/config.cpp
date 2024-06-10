@@ -2038,17 +2038,29 @@ class XtdGearModels
 		{
 			options[]=
 			{
-				"sleeves"
+				"camo",
+				"top"
 			};
 			label="Combat Fatigues [AAF]";
-			class sleeves
+			class camo
 			{
 				values[]=
 				{
-					"Full",
-					"Half"
+					"AAF",
+					"UNA"
 				};
-				alwaysSelectable=0;
+				alwaysSelectable=1;
+			};
+			class top
+			{
+				label="Top";
+				values[]=
+				{
+					"Standard",
+					"Rolled",
+					"Officer"
+				};
+				alwaysSelectable=1;
 			};
 		};
 		class acebi_fatigues_csat
@@ -2073,29 +2085,31 @@ class XtdGearModels
 		{
 			options[]=
 			{
-				"top",
-				"sleeves"
+				"camo",
+				"top"
 			};
 			label="Combat Fatigues [LDF]";
+			class camo
+			{
+				values[]=
+				{
+					"LDF",
+					"SFIA"
+				};
+				alwaysSelectable=1;
+			};
 			class top
 			{
 				label="Top";
 				values[]=
 				{
 					"Standard",
+					"Rolled",
+					"Officer",
 					"Sweater",
 					"Tank Top"
 				};
 				alwaysSelectable=1;
-			};
-			class sleeves
-			{
-				values[]=
-				{
-					"Full",
-					"Half"
-				};
-				alwaysSelectable=0;
 			};
 		};
 		class acebi_fatigues_nato
@@ -2113,7 +2127,8 @@ class XtdGearModels
 				{
 					"MTP",
 					"Tropic",
-					"M81"
+					"M81",
+					"DES"
 				};
 				alwaysSelectable=1;
 			};
@@ -2123,18 +2138,11 @@ class XtdGearModels
 				values[]=
 				{
 					"Standard",
+					"Rolled",
+					"Officer",
 					"Tee"
 				};
 				alwaysSelectable=1;
-			};
-			class sleeves
-			{
-				values[]=
-				{
-					"Full",
-					"Half"
-				};
-				alwaysSelectable=0;
 			};
 		};
 		class acebi_formal_suit
@@ -6697,14 +6705,20 @@ class XtdGearInfos
 		class U_I_CombatUniform
 		{
 			model="acebi_fatigues_aaf";
+			camo="AAF";
 			top="Standard";
-			sleeves="Full";
 		};
 		class U_I_CombatUniform_shortsleeve
 		{
 			model="acebi_fatigues_aaf";
-			top="Standard";
-			sleeves="Half";
+			camo="AAF";
+			top="Rolled";
+		};
+		class U_I_OfficerUniform
+		{
+			model="acebi_fatigues_aaf";
+			camo="AAF";
+			top="Officer";
 		};
 		class U_O_T_Soldier_F
 		{
@@ -6724,31 +6738,32 @@ class XtdGearInfos
 		class U_I_E_Uniform_01_shortsleeve_F
 		{
 			model="acebi_fatigues_ldf";
-			top="Standard";
-			sleeves="Half";
+			camo="LDF";
+			top="Rolled";
 		};
 		class U_I_E_Uniform_01_sweater_F
 		{
 			model="acebi_fatigues_ldf";
+			camo="LDF";
 			top="Sweater";
 		};
 		class U_I_E_Uniform_01_tanktop_F
 		{
 			model="acebi_fatigues_ldf";
+			camo="LDF";
 			top="Tank Top";
 		};
 		class U_I_E_Uniform_01_F
 		{
 			model="acebi_fatigues_ldf";
+			camo="LDF";
 			top="Standard";
-			sleeves="Full";
 		};
 		class U_B_CombatUniform_mcam
 		{
 			model="acebi_fatigues_nato";
 			camo="MTP";
 			top="Standard";
-			sleeves="Full";
 		};
 		class U_B_CombatUniform_mcam_tshirt
 		{
@@ -6761,7 +6776,6 @@ class XtdGearInfos
 			model="acebi_fatigues_nato";
 			camo="Tropic";
 			top="Standard";
-			sleeves="Full";
 		};
 		class U_B_T_Soldier_AR_F
 		{
@@ -6774,7 +6788,6 @@ class XtdGearInfos
 			model="acebi_fatigues_nato";
 			camo="M81";
 			top="Standard";
-			sleeves="Full";
 		};
 		class U_B_CombatUniform_tshirt_mcam_wdl_f
 		{
@@ -6786,22 +6799,19 @@ class XtdGearInfos
 		{
 			model="acebi_fatigues_nato";
 			camo="MTP";
-			top="Standard";
-			sleeves="Half";
+			top="Rolled";
 		};
 		class U_B_T_Soldier_SL_F
 		{
 			model="acebi_fatigues_nato";
 			camo="Tropic";
-			top="Standard";
-			sleeves="Half";
+			top="Rolled";
 		};
 		class U_B_CombatUniform_vest_mcam_wdl_f
 		{
 			model="acebi_fatigues_nato";
 			camo="M81";
-			top="Standard";
-			sleeves="Half";
+			top="Rolled";
 		};
 		class U_C_FormalSuit_01_black_F
 		{
