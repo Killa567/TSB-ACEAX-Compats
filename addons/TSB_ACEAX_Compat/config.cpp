@@ -115,5 +115,10 @@ class XtdGearModels
 			label="Snake";
 			image="TSB_ACEAX_Compat\data\snake.paa";
 		};
+		class DES
+		{
+			label="Desert";
+			image="TSB_ACEAX_Compat\data\DesertWS.paa";
+		};
 	};
 };

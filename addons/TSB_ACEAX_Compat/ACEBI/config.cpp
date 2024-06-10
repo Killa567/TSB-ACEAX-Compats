@@ -12,6 +12,7 @@ class CfgPatches
 		author="TSB";
 	};
 };
+
 class XtdGearModels
 {
 	class CfgGlasses
@@ -342,7 +343,8 @@ class XtdGearModels
 					"MTP",
 					"SGG",
 					"Tropic",
-					"M81"
+					"M81",
+					"DES"
 				};
 				alwaysSelectable=1;
 			};
@@ -387,7 +389,8 @@ class XtdGearModels
 					"KHK",
 					"MTP",
 					"OLI",
-					"M81"
+					"M81",
+					"DES"
 				};
 				alwaysSelectable=1;
 			};
@@ -467,7 +470,8 @@ class XtdGearModels
 					"RGR",
 					"MTP",
 					"SGG",
-					"TAN"
+					"TAN",
+					"DES"
 				};
 				alwaysSelectable=1;
 			};
@@ -1001,7 +1005,8 @@ class XtdGearModels
 					"AAF",
 					"CSAT",
 					"LDF",
-					"NATO"
+					"NATO",
+					"BLK"
 				};
 				alwaysSelectable=1;
 			};
@@ -2035,7 +2040,7 @@ class XtdGearModels
 			{
 				"sleeves"
 			};
-			label="Fatigues [AAF]";
+			label="Combat Fatigues [AAF]";
 			class sleeves
 			{
 				values[]=
@@ -2071,7 +2076,7 @@ class XtdGearModels
 				"top",
 				"sleeves"
 			};
-			label="Fatigues [LDF]";
+			label="Combat Fatigues [LDF]";
 			class top
 			{
 				label="Top";
@@ -2101,7 +2106,7 @@ class XtdGearModels
 				"top",
 				"sleeves"
 			};
-			label="Fatigues [NATO]";
+			label="Combat Fatigues [NATO]";
 			class camo
 			{
 				values[]=
@@ -2546,7 +2551,8 @@ class XtdGearModels
 					"RGR",
 					"MTP",
 					"Tropic",
-					"M81"
+					"M81",
+					"DES"
 				};
 				alwaysSelectable=1;
 			};
@@ -2566,7 +2572,8 @@ class XtdGearModels
 					"BLK",
 					"RGR",
 					"Tropic",
-					"M81"
+					"M81",
+					"DES"
 				};
 				alwaysSelectable=1;
 			};
@@ -2595,7 +2602,8 @@ class XtdGearModels
 					"BLK",
 					"RGR",
 					"Tropic",
-					"M81"
+					"M81",
+					"DES"
 				};
 				alwaysSelectable=1;
 			};
@@ -2624,7 +2632,8 @@ class XtdGearModels
 					"RGR",
 					"MTP",
 					"Tropic",
-					"M81"
+					"M81",
+					"DES"
 				};
 				alwaysSelectable=1;
 			};
@@ -2706,6 +2715,40 @@ class XtdGearModels
 				alwaysSelectable=1;
 			};
 		};
+		class acebi_ga_carrier_rig
+		{
+			options[]=
+			{
+				"camo"
+			};
+			label="GA Carrier Rig";
+			class camo
+			{
+				values[]=
+				{
+					"AAF",
+					"UNA"
+				};
+				alwaysSelectable=1;
+			};
+		};
+		class acebi_ga_carrier_lite
+		{
+			options[]=
+			{
+				"camo"
+			};
+			label="GA Carrier Lite";
+			class camo
+			{
+				values[]=
+				{
+					"AAF",
+					"UNA"
+				};
+				alwaysSelectable=1;
+			};
+		};
 		class acebi_identification_vest
 		{
 			options[]=
@@ -2753,7 +2796,8 @@ class XtdGearModels
 				{
 					"BRN",
 					"GHEX",
-					"GRY"
+					"GRY",
+					"OLI"
 				};
 				alwaysSelectable=1;
 			};
@@ -2789,6 +2833,23 @@ class XtdGearModels
 				{
 					"BLK",
 					"CBR",
+					"OLI"
+				};
+				alwaysSelectable=1;
+			};
+		};
+		class acebi_ravenvest
+		{
+			options[]=
+			{
+				"camo"
+			};
+			label="Raven Vest";
+			class camo
+			{
+				values[]=
+				{
+					"BLK",
 					"OLI"
 				};
 				alwaysSelectable=1;
@@ -3129,12 +3190,31 @@ class XtdGearModels
 				{
 					"BLK",
 					"HEX",
-					"GHEX"
+					"GHEX",
+					"SNK"
 				};
 				alwaysSelectable=1;
 			};
 		};
-		class acebi_hk121
+		class acebi_mk14
+		{
+			options[]=
+			{
+				"camo"
+			};
+			label="Mk14 Mod 1 EBR";
+			class camo
+			{
+				values[]=
+				{
+					"SND",
+					"BLK",
+					"SNK"
+				};
+				alwaysSelectable=1;
+			};
+		};
+		class  acebi_hk121
 		{
 			options[]=
 			{
@@ -4610,6 +4690,11 @@ class XtdGearInfos
 		{
 			model="acebi_kitbag";
 			camo="TAN";
+		};
+		class V_TacVestIR_blk
+		{
+			model="acebi_ravenvest";
+			camo="BLK";
 		};
 		class B_LegStrapBag_black_F
 		{
@@ -7323,6 +7408,16 @@ class XtdGearInfos
 			model="acebi_ga_carrier_gl";
 			camo="OLI";
 		};
+		class V_PlateCarrierIA2_dgtl
+		{
+			model="acebi_ga_carrier_rig";
+			camo="AAF";
+		};
+		class V_PlateCarrierIA1_dgtl
+		{
+			model="acebi_ga_carrier_lite";
+			camo="AAF";
+		};
 		class V_Plain_crystal_F
 		{
 			model="acebi_identification_vest";
@@ -7346,7 +7441,7 @@ class XtdGearInfos
 		class V_HarnessO_brn
 		{
 			model="acebi_lbv_harness";
-			camo="BRN";
+			camo="CBR";
 		};
 		class V_HarnessO_ghex_F
 		{
@@ -7662,6 +7757,11 @@ class XtdGearInfos
 		{
 			model="acebi_gm6_lynx";
 			camo="GHEX";
+		};
+		class srifle_EBR_F
+		{
+			model="acebi_mk14";
+			camo="SND";
 		};
 		class MMG_01_hex_F
 		{
