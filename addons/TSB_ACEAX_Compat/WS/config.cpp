@@ -51,8 +51,8 @@ class XtdGearModels
 				{
 					"BLK",
 					"DES",
-					"Jungle",
-					"Wood"
+					"JGL",
+					"WOOD"
 				};
 				alwaysSelectable=1;
 			};
@@ -389,6 +389,115 @@ class XtdGearModels
 				alwaysSelectable=1;
 			};
 		};
+		class lxWS_balisticmask
+		{
+			options[]=
+			{
+				"camo",
+				"turban"
+			};
+			label="Ballistic Mask";
+			class camo
+			{
+				values[]=
+				{
+					"BLK",
+					"GHEX",
+					"HEX",
+					"RED",
+					"SNK",
+					"WHT",
+					"WDL",
+					"YLW"
+				};
+				alwaysSelectable=1;
+			};
+			class turban
+			{
+				values[]=
+				{
+					"Yes",
+					"No"
+				};
+				alwaysSelectable=1;
+			};
+		};
+		class lxWS_oldhelmet
+		{
+			options[]=
+			{
+				"camo"
+			};
+			label="Old Helmet";
+			class camo
+			{
+				values[]=
+				{
+					"BLK",
+					"BLU",
+					"GRN",
+					"SND",
+					"WHT",
+					"UNA"
+				};
+				alwaysSelectable=1;
+			};
+		};
+		class lxWS_taqiyah
+		{
+			options[]=
+			{
+				"camo"
+			};
+			label="Taqiyah";
+			class camo
+			{
+				values[]=
+				{
+					"BLK",
+					"GRY",
+					"WHT"
+				};
+				alwaysSelectable=1;
+			};
+		};
+		class lxWS_turban
+		{
+			options[]=
+			{
+				"camo",
+				"fit"
+			};
+			label="Turban";
+			class camo
+			{
+				values[]=
+				{
+					"BLK",
+					"BLU",
+					"UNA",
+					"GRN",
+					"GRNP",
+					"ORG",
+					"RED",
+					"SND",
+					"WHT",
+					"YLW"
+				};
+				alwaysSelectable=1;
+			};
+			class fit
+			{
+				values[]=
+				{
+					"Full",
+					"Loose",
+					"Open",
+					"Simple"
+				};
+				alwaysSelectable=1;
+			};
+		};
 	};
 	class CfgGlasses
 	{
@@ -490,12 +599,12 @@ class XtdGearInfos
 		class arifle_SLR_V_camo_lxWS
 		{
 			model="lxWS_FAL";
-			camo="Jungle";
+			camo="JGL";
 		};
 		class arifle_SLR_lxWS
 		{
 			model="lxWS_FAL";
-			camo="Wood";
+			camo="WOOD";
 		};
 		class arifle_SLR_V_GL_lxWS
 		{
@@ -505,7 +614,7 @@ class XtdGearInfos
 		class arifle_SLR_GL_lxWS
 		{
 			model="lxWS_FALGL";
-			camo="Wood";
+			camo="WOOD";
 		};
 		class arifle_Galat_lxWS
 		{
@@ -910,6 +1019,404 @@ class XtdGearInfos
 		{
 			model="lxWS_ion";
 			camo="WHT";
+		};
+		class lxWS_H_bmask_base
+		{
+			model="lxWS_balisticmask";
+			camo="BLK";
+			turban="No";
+		};
+		class H_turban_02_mask_black_lxws
+		{
+			model="lxWS_balisticmask";
+			camo="BLK";
+			turban="Yes";
+		};
+		class lxWS_H_bmask_ghex
+		{
+			model="lxWS_balisticmask";
+			camo="GHEX";
+			turban="No";
+		};
+		class lxWS_H_bmask_hex
+		{
+			model="lxWS_balisticmask";
+			camo="HEX";
+			turban="No";
+		};
+		class H_turban_02_mask_hex_lxws
+		{
+			model="lxWS_balisticmask";
+			camo="HEX";
+			turban="Yes";
+		};
+		class lxWS_H_bmask_camo01
+		{
+			model="lxWS_balisticmask";
+			camo="RED";
+			turban="No";
+		};
+		class H_bmask_snake_lxws
+		{
+			model="lxWS_balisticmask";
+			camo="SNK";
+			turban="No";
+		};
+		class H_turban_02_mask_snake_lxws
+		{
+			model="lxWS_balisticmask";
+			camo="SNK";
+			turban="Yes";
+		};
+		class lxWS_H_bmask_white
+		{
+			model="lxWS_balisticmask";
+			camo="WHT";
+			turban="No";
+		};
+		class lxWS_H_bmask_camo02
+		{
+			model="lxWS_balisticmask";
+			camo="WDL";
+			turban="No";
+		};
+		class lxWS_H_bmask_yellow
+		{
+			model="lxWS_balisticmask";
+			camo="YLW";
+			turban="No";
+		};
+		class lxWS_H_Bandanna_blk_hs
+		{
+			model="acebi_bandana_head";
+			camo="BLK";
+			headset="Yes";
+		};
+		class lxWS_H_PASGT_goggles_black_F
+		{
+			model="acebi_basic_helm";
+			camo="BLK";
+			goggles="Yes"
+		};
+		class lxWS_H_PASGT_goggles_olive_F
+		{
+			model="acebi_basic_helm";
+			camo="OLI";
+			goggles="Yes"
+		};
+		class lxWS_H_PASGT_goggles_white_F
+		{
+			model="acebi_basic_helm";
+			camo="WHT";
+			goggles="Yes"
+		};
+		class lxWS_H_PASGT_basic_UN_F
+		{
+			model="acebi_basic_helm";
+			camo="UNA";
+			goggles="No"
+		};
+		class lxWS_H_PASGT_goggles_UN_F
+		{
+			model="acebi_basic_helm";
+			camo="UNA";
+			goggles="Yes"
+		};
+		class lxWS_H_Beret_Colonel
+		{
+			model="acebi_beret_faction";
+			faction="UNA";
+			rank="Unspecified";
+		};
+		class lxWS_H_Booniehat_desert
+		{
+			model="acebi_booniehat";
+			faction="DES";
+			headset="No";
+		};
+		class lxWS_H_HelmetCrew_I
+		{
+			model="acebi_crew_helm";
+			faction="NATO";
+			camo="BLK";
+		};
+		class lxWS_H_HelmetCrew_Blue
+		{
+			model="acebi_crew_helm";
+			faction="NATO";
+			camo="BLU";
+		};
+		class lxWS_H_Tank_tan_F
+		{
+			model="acebi_crew_helm_soft";
+			faction="SFIA";
+		};
+		class lxWS_H_MilCap_desert
+		{
+			model="acebi_mil_cap";
+			faction="DES";
+		};
+		class lxWS_H_ssh40_black
+		{
+			model="lxWS_oldhelmet";
+			camo="BLK";
+		};
+		class lxWS_H_ssh40_blue
+		{
+			model="lxWS_oldhelmet";
+			camo="BLU";
+		};
+		class lxWS_H_ssh40_green
+		{
+			model="lxWS_oldhelmet";
+			camo="GRN";
+		};
+		class lxWS_H_ssh40_sand
+		{
+			model="lxWS_oldhelmet";
+			camo="SND";
+		};
+		class lxWS_H_ssh40_white
+		{
+			model="lxWS_oldhelmet";
+			camo="WHT";
+		};
+		class lxWS_H_ssh40_un
+		{
+			model="lxWS_oldhelmet";
+			camo="UNA";
+		};
+		class lxWS_H_cloth_5_A
+		{
+			model="lxWS_taqiyah";
+			camo="BLK";
+		};
+		class lxWS_H_cloth_5_C
+		{
+			model="lxWS_taqiyah";
+			camo="GRY";
+		};
+		class lxWS_H_cloth_5_B
+		{
+			model="lxWS_taqiyah";
+			camo="WHT";
+		};
+		//turb
+		class lxWS_H_turban_03_black
+		{
+			model="lxWS_turban";
+			camo="BLK";
+			fit="Full";
+		};
+		class lxWS_H_turban_04_black
+		{
+			model="lxWS_turban";
+			camo="BLK";
+			fit="Loose";
+		};
+		class lxWS_H_turban_02_black
+		{
+			model="lxWS_turban";
+			camo="BLK";
+			fit="Open";
+		};
+		class lxWS_H_turban_01_black
+		{
+			model="lxWS_turban";
+			camo="BLK";
+			fit="Simple";
+		};
+		class lxWS_H_turban_03_blue
+		{
+			model="lxWS_turban";
+			camo="BLU";
+			fit="Full";
+		};
+		class lxWS_H_turban_04_blue
+		{
+			model="lxWS_turban";
+			camo="BLU";
+			fit="Loose";
+		};
+		class lxWS_H_turban_02_blue
+		{
+			model="lxWS_turban";
+			camo="BLU";
+			fit="Open";
+		};
+		class lxWS_H_turban_01_blue
+		{
+			model="lxWS_turban";
+			camo="BLU";
+			fit="Simple";
+		};
+		class lxWS_H_turban_03_blue_una
+		{
+			model="lxWS_turban";
+			camo="UNA";
+			fit="Full";
+		};
+		class lxWS_H_turban_04_blue_una
+		{
+			model="lxWS_turban";
+			camo="UNA";
+			fit="Loose";
+		};
+		class lxWS_H_turban_02_blue_una
+		{
+			model="lxWS_turban";
+			camo="UNA";
+			fit="Open";
+		};
+		class lxWS_H_turban_01_blue_una
+		{
+			model="lxWS_turban";
+			camo="UNA";
+			fit="Simple";
+		};
+		class lxWS_H_turban_03_green
+		{
+			model="lxWS_turban";
+			camo="GRN";
+			fit="Full";
+		};
+		class lxWS_H_turban_04_green
+		{
+			model="lxWS_turban";
+			camo="GRN";
+			fit="Loose";
+		};
+		class lxWS_H_turban_02_green
+		{
+			model="lxWS_turban";
+			camo="GRN";
+			fit="Open";
+		};
+		class lxWS_H_turban_01_green
+		{
+			model="lxWS_turban";
+			camo="GRN";
+			fit="Simple";
+		};
+		class lxWS_H_turban_03_green_pattern
+		{
+			model="lxWS_turban";
+			camo="GRNP";
+			fit="Full";
+		};
+		class lxWS_H_turban_02_green_pattern
+		{
+			model="lxWS_turban";
+			camo="GRNP";
+			fit="Open";
+		};
+		class lxWS_H_turban_03_orange
+		{
+			model="lxWS_turban";
+			camo="ORG";
+			fit="Full";
+		};
+		class lxWS_H_turban_02_orange
+		{
+			model="lxWS_turban";
+			camo="ORG";
+			fit="Open";
+		};
+		class lxWS_H_turban_03_red
+		{
+			model="lxWS_turban";
+			camo="RED";
+			fit="Full";
+		};
+		class lxWS_H_turban_04_red
+		{
+			model="lxWS_turban";
+			camo="RED";
+			fit="Loose";
+		};
+		class lxWS_H_turban_02_red
+		{
+			model="lxWS_turban";
+			camo="RED";
+			fit="Open";
+		};
+		class lxWS_H_turban_01_red
+		{
+			model="lxWS_turban";
+			camo="RED";
+			fit="Simple";
+		};
+		class lxWS_H_turban_03_sand
+		{
+			model="lxWS_turban";
+			camo="SND";
+			fit="Full";
+		};
+		class lxWS_H_turban_04_sand
+		{
+			model="lxWS_turban";
+			camo="SND";
+			fit="Loose";
+		};
+		class lxWS_H_turban_02_sand
+		{
+			model="lxWS_turban";
+			camo="SND";
+			fit="Open";
+		};
+		class lxWS_H_turban_01_sand
+		{
+			model="lxWS_turban";
+			camo="SND";
+			fit="Simple";
+		};
+		class lxWS_H_turban_03_gray
+		{
+			model="lxWS_turban";
+			camo="WHT";
+			fit="Full";
+		};
+		class lxWS_H_turban_04_gray
+		{
+			model="lxWS_turban";
+			camo="WHT";
+			fit="Loose";
+		};
+		class lxWS_H_turban_02_gray
+		{
+			model="lxWS_turban";
+			camo="WHT";
+			fit="Open";
+		};
+		class lxWS_H_turban_01_gray
+		{
+			model="lxWS_turban";
+			camo="WHT";
+			fit="Simple";
+		};
+		class lxWS_H_turban_03_yellow
+		{
+			model="lxWS_turban";
+			camo="YLW";
+			fit="Full";
+		};
+		class lxWS_H_turban_04_yellow
+		{
+			model="lxWS_turban";
+			camo="YLW";
+			fit="Loose";
+		};
+		class lxWS_H_turban_02_yellow
+		{
+			model="lxWS_turban";
+			camo="YLW";
+			fit="Open";
+		};
+		class lxWS_H_turban_01_yellow
+		{
+			model="lxWS_turban";
+			camo="YLW";
+			fit="Simple";
 		};
 	};
 	class CfgGlasses

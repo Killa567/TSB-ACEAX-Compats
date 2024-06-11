@@ -120,5 +120,50 @@ class XtdGearModels
 			label="Desert";
 			image="TSB_ACEAX_Compat\data\DesertWS.paa";
 		};
+		class WOOD
+		{
+			label="Wood";
+			image="TSB_ACEAX_Compat\data\Wood.paa";
+		};
+		class JGL
+		{
+			label="Jungle";
+			image="TSB_ACEAX_Compat\data\Jungle.paa";
+		};
+		class CAMO
+		{
+			label="Camo";
+			image="TSB_ACEAX_Compat\data\Camo.paa";
+		};
+		class WDL
+		{
+			label="Woodland";
+			image="TSB_ACEAX_Compat\data\Woodland.paa";
+		};
+		class UNA
+		{
+			label="UNA";
+			image="TSB_ACEAX_Compat\data\UN.paa";
+		};
+		class RED
+		{
+			label="Red";
+			image="#(rgb,8,8,3)color(0.9,0.2,0.2,1)";
+		};
+		class YLW
+		{
+			label="Yellow";
+			image="#(rgb,8,8,3)color(0.98,0.97,0.24,1)";
+		};
+		class ORG
+		{
+			label="Orange";
+			image="#(rgb,8,8,3)color(0.96,0.66,0.17,1)";
+		};
+		class BRN
+		{
+			label="Brown";
+			image="#(rgb,8,8,3)color(0.56,0.34,0.02,1)";
+		};
 	};
 };

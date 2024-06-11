@@ -1157,7 +1157,8 @@ class XtdGearModels
 		{
 			options[]=
 			{
-				"camo"
+				"camo",
+				"goggles"
 			};
 			label="Basic Helmet";
 			class camo
@@ -1167,7 +1168,17 @@ class XtdGearModels
 					"BLK",
 					"BLU",
 					"OLI",
-					"WHT"
+					"WHT",
+					"UNA"
+				};
+				alwaysSelectable=1;
+			};
+			class goggles
+			{
+				values[]=
+				{
+					"No",
+					"Yes"
 				};
 				alwaysSelectable=1;
 			};
@@ -1206,7 +1217,8 @@ class XtdGearModels
 					"Gendarmerie",
 					"CSAT",
 					"LDF",
-					"NATO"
+					"NATO",
+					"UNA"
 				};
 				alwaysSelectable=1;
 			};
@@ -1241,7 +1253,8 @@ class XtdGearModels
 					"Tropic",
 					"M81",
 					"AAF",
-					"EAF"
+					"EAF",
+					"DES"
 				};
 				alwaysSelectable=1;
 			};
@@ -1350,7 +1363,9 @@ class XtdGearModels
 					"HEX",
 					"GHEX",
 					"OLI",
-					"RGR"
+					"RGR",
+					"BLK",
+					"BLU"
 				};
 				alwaysSelectable=0;
 			};
@@ -1367,7 +1382,8 @@ class XtdGearModels
 				values[]=
 				{
 					"CSAT",
-					"LDF"
+					"LDF",
+					"SFIA"
 				};
 				alwaysSelectable=1;
 			};
@@ -1402,7 +1418,7 @@ class XtdGearModels
 				values[]=
 				{
 					"BLK",
-					"ORN",
+					"ORG",
 					"RED",
 					"WHT",
 					"YLW"
@@ -1446,7 +1462,7 @@ class XtdGearModels
 				values[]=
 				{
 					"BLK",
-					"ORN",
+					"ORG",
 					"RED",
 					"Vrana",
 					"WHT",
@@ -1478,7 +1494,7 @@ class XtdGearModels
 				{
 					"BLU",
 					"BRN",
-					"Camo",
+					"CAMO",
 					"Checker",
 					"GRY",
 					"TAN"
@@ -1516,7 +1532,7 @@ class XtdGearModels
 				values[]=
 				{
 					"BLK",
-					"ORN",
+					"ORG",
 					"RED",
 					"WHT",
 					"YLW"
@@ -1607,7 +1623,8 @@ class XtdGearModels
 					"GRY",
 					"MTP",
 					"Tropic",
-					"M81"
+					"M81",
+					"DES"
 				};
 				alwaysSelectable=1;
 			};
@@ -1701,7 +1718,7 @@ class XtdGearModels
 					"Bluking",
 					"Fuel",
 					"GRN",
-					"ORN",
+					"ORG",
 					"RED",
 					"Redstone",
 					"Vrana",
@@ -2024,7 +2041,7 @@ class XtdGearModels
 					"Bluking",
 					"Fuel",
 					"GRN",
-					"ORN",
+					"ORG",
 					"RED",
 					"Redstone",
 					"Vrana",
@@ -2117,8 +2134,7 @@ class XtdGearModels
 			options[]=
 			{
 				"camo",
-				"top",
-				"sleeves"
+				"top"
 			};
 			label="Combat Fatigues [NATO]";
 			class camo
@@ -2462,7 +2478,7 @@ class XtdGearModels
 				{
 					"Beach",
 					"BLU",
-					"ORN"
+					"ORG"
 				};
 				alwaysSelectable=1;
 			};
@@ -2962,7 +2978,7 @@ class XtdGearModels
 				values[]=
 				{
 					"BLU",
-					"ORN",
+					"ORG",
 					"YLW"
 				};
 				alwaysSelectable=1;
@@ -3020,7 +3036,7 @@ class XtdGearModels
 				{
 					"BLK",
 					"BRN",
-					"Camo",
+					"CAMO",
 					"KHK",
 					"OLI",
 					"Stavrou"
@@ -3340,7 +3356,7 @@ class XtdGearModels
 			{
 				values[]=
 				{
-					"Camo",
+					"CAMO",
 					"OLI"
 				};
 				alwaysSelectable=1;
@@ -5475,21 +5491,25 @@ class XtdGearInfos
 		{
 			model="acebi_basic_helm";
 			camo="BLK";
+			goggles="No"
 		};
 		class H_PASGT_basic_blue_F
 		{
 			model="acebi_basic_helm";
 			camo="BLU";
+			goggles="No"
 		};
 		class H_PASGT_basic_olive_F
 		{
 			model="acebi_basic_helm";
 			camo="OLI";
+			goggles="No"
 		};
 		class H_PASGT_basic_white_F
 		{
 			model="acebi_basic_helm";
 			camo="WHT";
+			goggles="No"
 		};
 		class H_Watchcap_blk
 		{
@@ -5848,7 +5868,7 @@ class XtdGearInfos
 		class H_EarProtectors_orange_F
 		{
 			model="acebi_ear_protectors";
-			camo="ORN";
+			camo="ORG";
 		};
 		class H_EarProtectors_red_F
 		{
@@ -5926,19 +5946,19 @@ class XtdGearInfos
 		class H_Construction_basic_orange_F
 		{
 			model="acebi_hardhat";
-			camo="ORN";
+			camo="ORG";
 			ears="None";
 		};
 		class H_Construction_earprot_orange_F
 		{
 			model="acebi_hardhat";
-			camo="ORN";
+			camo="ORG";
 			ears="Ear Proc.";
 		};
 		class H_Construction_headset_orange_F
 		{
 			model="acebi_hardhat";
-			camo="ORN";
+			camo="ORG";
 			ears="Headset";
 		};
 		class H_Construction_basic_red_F
@@ -6026,7 +6046,7 @@ class XtdGearInfos
 		class H_Hat_camo
 		{
 			model="acebi_hat";
-			camo="Camo";
+			camo="CAMO";
 		};
 		class H_Hat_checker
 		{
@@ -6066,7 +6086,7 @@ class XtdGearInfos
 		class H_HeadSet_orange_F
 		{
 			model="acebi_headset";
-			camo="ORN";
+			camo="ORG";
 		};
 		class H_HeadSet_red_F
 		{
@@ -6316,7 +6336,7 @@ class XtdGearInfos
 		class H_RacingHelmet_1_orange_F
 		{
 			model="acebi_racing_helmet";
-			camo="ORN";
+			camo="ORG";
 		};
 		class H_RacingHelmet_1_red_F
 		{
@@ -6675,7 +6695,7 @@ class XtdGearInfos
 		class U_C_Driver_1_orange
 		{
 			model="acebi_driver_cover";
-			camo="ORN";
+			camo="ORG";
 		};
 		class U_C_Driver_1_red
 		{
@@ -7161,7 +7181,7 @@ class XtdGearInfos
 		class U_C_man_sport_2_F
 		{
 			model="acebi_sports_clothes";
-			camo="ORN";
+			camo="ORG";
 		};
 		class U_C_Man_casual_6_F
 		{
@@ -7561,7 +7581,7 @@ class XtdGearInfos
 		class V_Safety_orange_F
 		{
 			model="acebi_safetyvest";
-			camo="ORN";
+			camo="ORG";
 		};
 		class V_Safety_yellow_F
 		{
@@ -7626,7 +7646,7 @@ class XtdGearInfos
 		class V_TacVest_camo
 		{
 			model="acebi_tacvest";
-			camo="Camo";
+			camo="CAMO";
 		};
 		class V_TacVest_khk
 		{
@@ -7861,7 +7881,7 @@ class XtdGearInfos
 		class srifle_DMR_06_camo_F
 		{
 			model="acebi_m14";
-			camo="Camo";
+			camo="CAMO";
 		};
 		class srifle_DMR_06_olive_F
 		{
