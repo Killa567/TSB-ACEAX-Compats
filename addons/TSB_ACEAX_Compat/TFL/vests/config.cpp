@@ -17,6 +17,8 @@ class CfgPatches
 		versionAr[]={0,1,0,0};
 	};
 };
+
+lllllllllllllllaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaallllllllllllllllllllllllllllllllllllaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 class XtdGearModels
 {
 	class SleevesBase;
