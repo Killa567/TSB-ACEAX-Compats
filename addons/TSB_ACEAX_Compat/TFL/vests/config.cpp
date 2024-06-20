@@ -1,8 +1,8 @@
 class CfgPatches
 {
-	class aceax_compat_tfl_vests
+	class TSB_ACEAX_Compat_tfl_vests
 	{
-		name="compat_tfl_vests";
+		name="TSB_ACEAX_Compat_tfl_vests";
 		units[]={};
 		weapons[]={};
 		requiredVersion=1.88;
@@ -11,10 +11,11 @@ class CfgPatches
 			"tfl_vests",
 			"tfl_vests_2"
 		};
-		author="wanoO";
+		author="TSB";
 		version="0.1.0.0";
 		versionStr="0.1.0.0";
 		versionAr[]={0,1,0,0};
+		skipWhenMissingDependencies = 1;
 	};
 };
 
