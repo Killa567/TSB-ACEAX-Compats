@@ -8,6 +8,7 @@ class CfgPatches
 		requiredVersion=1.88;
 		requiredAddons[]=
 		{
+			"aceax_gearinfo",
 			"tfl_vests",
 			"tfl_vests_2"
 		};
