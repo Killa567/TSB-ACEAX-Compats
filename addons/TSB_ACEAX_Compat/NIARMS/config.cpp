@@ -4770,14 +4770,6 @@ class XtdGearInfos
 			stock="yes";
 			wear="yes";
 		};
-		class hlc_pistol_c96_Bolo_Worn_Stock
-		{
-			model="aceax_niarms_compat_main_c96";
-			variant="standard";
-			barrelLength="short";
-			stock="yes";
-			wear="yes";
-		};
 		class hlc_pistol_M712
 		{
 			model="aceax_niarms_compat_main_c96";
@@ -4889,12 +4881,6 @@ class XtdGearInfos
 			camo="none";
 		};
 		class hlc_rifle_FN3011Modern
-		{
-			model="aceax_niarms_compat_main_fn3011";
-			variant="modernized";
-			camo="none";
-		};
-		class hlc_rifle_FN3011Modern_camo
 		{
 			model="aceax_niarms_compat_main_fn3011";
 			variant="modernized";
@@ -5658,13 +5644,6 @@ class XtdGearInfos
 			model="aceax_niarms_compat_main_minimi";
 			stock="para";
 			barrel="long";
-			rail="yes";
-		};
-		class hlc_lmg_minimipara_long_railed
-		{
-			model="aceax_niarms_compat_main_minimi";
-			stock="para";
-			barrel="short";
 			rail="yes";
 		};
 		class hlc_smg_mp5a2
