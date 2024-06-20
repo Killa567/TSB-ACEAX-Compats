@@ -18,8 +18,6 @@ class CfgPatches
 		skipWhenMissingDependencies = 1;
 	};
 };
-
-lllllllllllllllaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaallllllllllllllllllllllllllllllllllllaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 class XtdGearModels
 {
 	class SleevesBase;
