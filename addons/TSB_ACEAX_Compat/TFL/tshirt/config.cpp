@@ -146,9 +146,7 @@ class XtdGearModels
 				values[]=
 				{
 					"on",
-					"off",
-					"left",
-					"right"
+					"off"
 				};
 				class on
 				{
@@ -157,14 +155,6 @@ class XtdGearModels
 				class off
 				{
 					label="Off";
-				};
-				class left
-				{
-					label="Left";
-				};
-				class right
-				{
-					label="Right";
 				};
 			};
 			class sleeve
